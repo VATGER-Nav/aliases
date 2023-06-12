@@ -35,6 +35,7 @@
 .ts Taxi to stand $uc($1) via $uc($2).
 .th Taxi via $uc($1), hold short of $uc($2).
 .tc Continue taxi.
+.te Taxi to entry $uc($1) via $uc($2).
 .hs Hold short of $uc($1).
 .gw Give way to $1.
 
