@@ -10,17 +10,21 @@
 .close All stations, monitor Unicom, 122.800.
 .dis Disregard.
 .una Unable.
+.noatc No further ATC available, switch UNICOM on 122,800, good bye.
 
 --- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and are connected with the callsign indicated in the flight plan.
-.invalid Your flight plan is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
+.rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
+.newrte The route you have filed is invalid. Please use the following route to $arr and report if you can accept it: $uc($1)
 .acdm ATC is currently using ACDM procedures. If you are unfamiliar with the ACDM process, you can learn about it at ///TBA///.
-.vdgs You can visit https://vacdm.vatger.de to set your TOBT and use the personalized VDGS with departure information.
+.vdgs Please visit https://vacdm.vatger.de to set your TOBT and use the personalized VDGS with departure information.
 .tobt Report your TOBT (target off-block time).
 .tsat You can find your current TSAT at https://vacdm.vatger.de.
 .clr Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb $temp, squawk $squawk.
 .clrv Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
 .clrvec Information $atiscode current. Cleared to $arr, vectored departure, flight planned route, climb on runway track $temp, squawk $squawk.
+.rbr Readback correct, report ready.
+.rbsu Readback correct, startup approved.
 .su Startup approved.
 .suco Startup approved. Hold position. Contact $radioname($1) on $freq($1).
 
