@@ -11,6 +11,10 @@
 .dis Disregard.
 .una Unable.
 .noatc No further ATC available, switch UNICOM on 122,800, good bye.
+.callsign Hi, I've just seen that you are logged in with the 2-letter IATA Code of your airline (e.g. LH). On Vatsim we need to use the ICAO 3-letter Code (e.g. DLH). Please disconnect and reconnect with the correct Callsign and refile your flightplan. Thanks!
+.logoff If you are not able to comply with ATC instructions (Code of Conduct B8), we encourage you to disconnect temporarily from the network. Please do not spoil the experience of other pilots and controllers.
+.cocwall .wallop $aircraft unable to comply with ATC instructions.
+.cxfreq Hey:) Maybe you've noticed that I gave you a handoff to a frequency that is not displayed in the controller list of your pilot client. The reason is that this frequency is cross-coupled - that means coupled together with another frequency this station covers. We do that to be more flexible when doing spontaneous station splits. To ensure this we would ask you to really contact the frequency you heard given by the controller, thanks! :)
 
 --- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and are connected with the callsign indicated in the flight plan.
@@ -19,6 +23,7 @@
 .acdm ATC is currently using ACDM procedures. If you are unfamiliar with the ACDM process, you can learn about it at ///TBA///.
 .vdgs Please visit https://vacdm.vatger.de to set your TOBT and use the personalized VDGS with departure information.
 .tobt Report your TOBT (target off-block time).
+.vacdm Hi, please set your TOBT (Target Off-Block Time - time when you are ready to push/start the engines) at vacdm.vatger.de to generate a TSAT and to improve the outbound flow at the airport. Thanks!
 .tsat You can find your current TSAT at https://vacdm.vatger.de.
 .clr Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb $temp, squawk $squawk.
 .clrv Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
