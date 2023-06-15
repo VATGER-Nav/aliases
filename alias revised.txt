@@ -16,7 +16,7 @@
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and are connected with the callsign indicated in the flight plan.
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
 .newrte The route you have filed is invalid. Please use the following route to $arr and report if you can accept it: $uc($1)
-.acdm ATC is currently using ACDM procedures. If you are unfamiliar with the ACDM process, you can learn about it at ///TBA///.
+.acdm ATC is currently using ACDM procedures. If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
 .vdgs Please visit https://vacdm.vatger.de to set your TOBT and use the personalized VDGS with departure information.
 .tobt Report your TOBT (target off-block time).
 .vacdm Hi, please set your TOBT (Target Off-Block Time - time when you are ready to push/start the engines) at vacdm.vatger.de to generate a TSAT and to improve the outbound flow at the airport. Thanks!
