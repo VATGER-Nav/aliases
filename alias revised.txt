@@ -18,8 +18,7 @@
 .newrte The route you have filed is invalid. Please use the following route to $arr and report if you can accept it: $uc($1)
 .acdm ATC is currently using ACDM procedures. If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
 .vdgs Please visit https://vacdm.vatger.de to set your TOBT and use the personalized VDGS with departure information.
-.tobt Report your TOBT (target off-block time).
-.vacdm Hi, please set your TOBT (Target Off-Block Time - time when you are ready to push/start the engines) at vacdm.vatger.de to generate a TSAT and to improve the outbound flow at the airport. Thanks!
+.tobt Set your TOBT (target off-block time) at vacdm.vatger.de.
 .tsat You can find your current TSAT at https://vacdm.vatger.de.
 .clr Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb $temp, squawk $squawk.
 .clrv Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
