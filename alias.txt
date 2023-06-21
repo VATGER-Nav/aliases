@@ -20,9 +20,10 @@
 .vdgs Please visit https://vacdm.vatger.de to set your TOBT and use the personalized VDGS with departure information.
 .tobt Set your TOBT (target off-block time) at vacdm.vatger.de.
 .tsat You can find your current TSAT at https://vacdm.vatger.de.
-.clr Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb $temp, squawk $squawk.
-.clrv Information $atiscode current. Cleared to $arr, $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
-.clrvec Information $atiscode current. Cleared to $arr, vectored departure, flight planned route, climb on runway track $temp, squawk $squawk.
+.clr Cleared to $arr, $SID departure, flight planned route, climb $temp, squawk $squawk.
+.clrv Cleared to $arr, $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
+.clrvec Cleared to $arr, vectored departure, flight planned route, climb on runway track $temp, squawk $squawk.
+.atis Check information $uc($1).
 .rbr Readback correct, report ready.
 .su Startup approved.
 .suco Startup approved. Hold position. Contact $radioname($1) on $freq($1).
