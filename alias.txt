@@ -11,6 +11,7 @@
 .dis Disregard.
 .una Unable.
 .wallcoc .wallop $aircraft unable to comply with ATC instructions.
+.wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages.
 
 --- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and are connected with the callsign indicated in the flight plan.
@@ -237,3 +238,5 @@
 .warnrdy It appears you have requested a clearance without being ready to comply with it. Please only request startup, pushback, and taxi once you are ready to comply with the appropriate clearance within the next minute. If a problem arises after you have received your clearance, notify ATC immediately so they can find a different solution.
 .warnvac You have not correctly vacated the runway. Your aircraft needs to be past the appropriate runway hold short line in its entirety before you are considered off the runway. Do not stop moving until this is ensured to avoid causing go arounds for following traffic and/or delays for pending departures.
 .warnvsoa You appear to be taking part in a VSOA-restricted mission. If you are not part of an VSOA, you should stop this immediately, as a supervisor will most likely remove you from the network. You can find more information on the VATSIM Special Operations Policy at https://vatsim.net/docs/policy/vsoa-ppm.
+.rwy You have connected on an active runway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
+.twy You have connected on an active taxiway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
