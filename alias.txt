@@ -1,5 +1,6 @@
 --- GENERAL ---
-.pos Report your position.
+.r Report $1.
+.rpos Report your position.
 .co Contact $radioname($1) on $freq($1).
 .costby Standby for $radioname($1) on $freq($1).
 .uni Monitor Unicom, 122.800.
@@ -10,15 +11,15 @@
 .close All stations, monitor Unicom, 122.800.
 .dis Disregard.
 .una Unable.
-.wallcoc .wallop $aircraft unable to comply with ATC instructions.
-.wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages.
+.wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
+.wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
+.wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
 
 --- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with match.
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.acdm ATC is currently using ACDM procedures. If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
-.tobt Set your TOBT (target off-block time) at https://vacdm.vatger.d.
+.tobt Set your TOBT (target off-block time) at https://vacdm.vatger.de.
 .tsat You can find your current TSAT and the VDGS with personalized departure information at https://vacdm.vatger.de.
 .clr Cleared to $arr, $SID departure, flight planned route, climb to $temp, squawk $squawk.
 .clrv Cleared to $arr, $SID departure, flight planned route, climb via SID to $temp, squawk $squawk.
@@ -132,9 +133,9 @@
 .cly Cleared localizer Y approach runway $arrrwy.
 .clz Cleared localizer Z approach runway $arrrwy.
 .cvis Cleared visual approach runway $arrrwy.
-.spd Maintain speed $uc($1) knots.
-.spdu Maintain speed $uc($1) knots until $uc($2) miles final.
-.spdm Mach $uc($1).
+.spd Fly speed $uc($1) knots.
+.spdu Fly speed $uc($1) knots until $uc($2) miles final.
+.spdm Fly speed Mach $uc($1).
 .spdfa Reduce to final approach speed.
 .spdn Resume normal speed.
 .spdh High speed approved.
@@ -146,7 +147,6 @@
 .noctr Remain outside the CTR.
 .nod Remain outside airspace class D.
 .noc Remain outside airspace class C.
-.r Report $1.
 .rt Right turn approved.
 .orbr Orbit right.
 .orbl Orbit left.
@@ -222,7 +222,7 @@
 .helpnewbie You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or one of the Discord servers at https://community.vatsim.net/servers.
 .helptext You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice".
 .helppm Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers.
-.helpcharts You can find free and current IFR charts for German airports at https://chartfox.org, free and current VFR charts for German airports can be found at https://www.vfraip.de/.
+.helpcharts You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/.
 .helpsector You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/.
 .helpgg You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg.
 .helpmm You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm.
@@ -231,6 +231,7 @@
 .helpkb You can find a lot of helpful information in the VATSIM Germany Knowledgebase (https://kb.vatger.de).
 .helpiata You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign.
 .helpcx Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
+.helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
 
 --- WARNINGS ---
 .warncoc If you are unable to comply with ATC instructions (as required by Code of Conduct section B8), we strongly recommend you disconnect from the network and acquire the skills necessary for flying on VATSIM in order to keep it fun for everyone, including controllers and other pilots. Otherwise, ATC will need to involve a supervisor.
@@ -238,6 +239,7 @@
 .warnpush You are pushing back without clearance. HOLD POSITION IMMEDIATELY and return to your parking position. In Germany, pushback always requires an explicit clearance as all ramp areas are controlled. Note that Delivery does not issue pushback clearances and the phrase "startup approved" does not include clearance for pushback.
 .warnrdy It appears you have requested a clearance without being ready to comply with it. Please only request startup, pushback, and taxi once you are ready to comply with the appropriate clearance within the next minute. If a problem arises after you have received your clearance, notify ATC immediately so they can find a different solution.
 .warnvac You have not correctly vacated the runway. Your aircraft needs to be past the appropriate runway hold short line in its entirety before you are considered off the runway. Do not stop moving until this is ensured to avoid causing go arounds for following traffic and/or delays for pending departures.
+.warnemer CANCEL YOUR EMERGENCY IMMEDIATELY or disconnect from the network (as required by Code of Conduct section B6).
 .warnvsoa You appear to be taking part in a VSOA-restricted mission. If you are not part of an VSOA, we recommend you stop this activity immediately; otherwise, a supervisor might remove you from the network. You can find more information on the VATSIM Special Operations Policy at https://vatsim.net/docs/policy/vsoa-ppm.
 .rwy You have connected on an active runway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
 .twy You have connected on an active taxiway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
