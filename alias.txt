@@ -40,7 +40,7 @@
 .ts Taxi to stand $uc($1) via $uc($2).
 .tgat Taxi to the GAT via $uc($1).
 .th Taxi via $uc($1), hold short of $uc($2).
-.tc Continue taxi.
+.ct Continue taxi.
 .te Taxi to entry $uc($1) via $uc($2).
 .hs Hold short of $uc($1).
 .gw Give way to $1.
@@ -212,7 +212,7 @@
 .dts Rollen Sie zu Parkposition $uc($1) über $uc($2).
 .dtgat Rollen Sie zum Abstellplatz der Allgemeinen Luftfahrt über $uc($1).
 .dth Rollen Sie über $uc($1), halten Sie vor $uc($2).
-.dtc Rollen Sie weiter.
+.dct Rollen Sie weiter.
 .dte Rollen Sie zu Entry $uc($1) über $uc($2).
 .dhs Halten Sie vor $uc($1).
 .dgw Gewähren Sie $1 Vorfahrt.
