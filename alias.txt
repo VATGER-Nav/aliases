@@ -199,3 +199,19 @@
 .warnvac You have not correctly vacated the runway. Your aircraft needs to be past the appropriate runway hold short line in its entirety before you are considered off the runway. Do not stop moving until this is ensured to avoid causing a go around for following traffic and delays for pending departures.
 .warndirector You have not made the correct initial call when contacting the Director frequency. Please only report your callsign when making your initial call on the Director frequency. The Director needs to be able to turn aircraft onto final at the right moment, so frequency congestion needs to be held to a minimum.
 .warnvsoa You appear to be taking part in a VSOA-restricted mission. If you are not part of an VSOA, you should stop this immediately, as a supervisor will most likely remove you from the network. You can find more information on the VATSIM Special Operations Policy at https://vatsim.net/docs/policy/vsoa-ppm.
+
+--- AUTOTEXT MESSAGES ---
+.autoproceed Proceed direct $1.
+.autoclearedils Cleared ILS approach runway $1.
+.autoclearedvisual Cleared visual approach runway $1.
+.autoclimblevel Climb to flight level $1.
+.autoclimbaltitude Climb to altitude $1 ft, QNH $altim($dep).
+.autodescendlevel Descend to flight level $1.
+.autodescendaltitude Descend to altitude $1 ft, QNH $altim($arr).
+.autospeed Fly speed $1 knots.
+.automach Fly speed Mach $1.
+.autonospeed Resume normal speed.
+.autoturnleft Turn left heading $1.
+.autoturnright Turn right heading $1.
+.autocontact Contact $1 $2.
+.autosquawk Squawk $1.
