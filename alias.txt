@@ -243,3 +243,19 @@
 .warnvsoa You appear to be taking part in a VSOA-restricted mission. If you are not part of an VSOA, we recommend you stop this activity immediately; otherwise, a supervisor might remove you from the network. You can find more information on the VATSIM Special Operations Policy at https://vatsim.net/docs/policy/vsoa-ppm.
 .rwy You have connected on an active runway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
 .twy You have connected on an active taxiway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
+
+--- AUTOTEXT MESSAGES ---
+.autoproceed Proceed direct $1.
+.autoclearedils Cleared ILS approach runway $1.
+.autoclearedvisual Cleared visual approach runway $1.
+.autoclimblevel Climb to flight level $1.
+.autoclimbaltitude Climb to altitude $1 ft, QNH $altim($dep).
+.autodescendlevel Descend to flight level $1.
+.autodescendaltitude Descend to altitude $1 ft, QNH $altim($arr).
+.autospeed Fly speed $1 knots.
+.automach Fly speed Mach $1.
+.autonospeed Resume normal speed.
+.autoturnleft Turn left heading $1.
+.autoturnright Turn right heading $1.
+.autocontact Contact $1 $2.
+.autosquawk Squawk $1.
