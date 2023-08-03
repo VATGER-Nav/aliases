@@ -21,8 +21,8 @@
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
 .tobt Set your TOBT (target off-block time) at https://vacdm.vatger.de.
 .tsat You can find your current TSAT and the VDGS with personalized departure information at https://vacdm.vatger.de.
-.clr Cleared to $arr, $SID departure, flight planned route, climb to $temp, squawk $squawk.
-.clrv Cleared to $arr, $SID departure, flight planned route, climb via SID to $temp, squawk $squawk.
+.clr Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
+.clrv Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
 .clrvec Cleared to $arr, radar vectored departure, flight planned route, climb on runway track to $temp, squawk $squawk.
 .atis Check information $uc($1).
 .rbr Readback correct, report ready.
@@ -46,13 +46,13 @@
 .gw Give way to $1.
 
 --- TOWER ---
-.cft Wind $winds, runway $deprwy, cleared for take-off.
-.cfit Wind $winds, runway $deprwy, cleared for immediate take-off.
-.ctl Wind $winds, runway $arrrwy, cleared to land.
-.ctll Wind $winds, runway $arrrwy, cleared to land, vacate left.
-.ctlr Wind $winds, runway $arrrwy, cleared to land, vacate right.
-.ctg Wind $winds, runway $arrrwy, cleared touch and go.
-.cla Wind $winds, runway $arrrwy, cleared low approach.
+.cft Wind $wind, runway $deprwy, cleared for take-off.
+.cfit Wind $wind, runway $deprwy, cleared for immediate take-off.
+.ctl Wind $wind, runway $arrrwy, cleared to land.
+.ctll Wind $wind, runway $arrrwy, cleared to land, vacate left.
+.ctlr Wind $wind, runway $arrrwy, cleared to land, vacate right.
+.ctg Wind $wind, runway $arrrwy, cleared touch and go.
+.cla Wind $wind, runway $arrrwy, cleared low approach.
 .rdy Report ready for departure.
 .rdyimm Are you ready for immediate departure?
 .stop Stop immediately. Hold position, cancel take-off.
@@ -70,20 +70,20 @@
 .sqstby Squawk Standby.
 .sqv Squawk VFR.
 .id Identified.
-.c Climb to flight level $uc($1).
-.ca Climb to altitude $uc($1)ft.
-.cvs Climb via SID to flight level $uc($1).
-.d Descend to flight level $uc($1).
-.da Descend to altitude $uc($1)ft.
-.daq Descend to altitude $uc($1)ft, QNH $altim($arr).
-.dva Descend via STAR to flight level $uc($1).
-.dtr Descend to reach flight level $uc($1) at $uc($2).
-.roc Climb at $uc($1)ft per minute.
-.rocg Climb at $uc($1)ft per minute or greater.
-.rocl Climb at $uc($1)ft per minute or less.
-.rod Descend at $uc($1)ft per minute.
-.rodg Descend at $uc($1)ft per minute or greater.
-.rodl Descend at $uc($1)ft per minute or less.
+.c Climb to flight level $temp.
+.ca Climb to altitude $temp ft.
+.cvs Climb via SID to flight level $temp.
+.d Descend to flight level $temp.
+.da Descend to altitude $temp ft.
+.daq Descend to altitude $temp ft, QNH $altim($arr).
+.dva Descend via STAR to flight level $temp.
+.dtr Descend to reach flight level $temp at $uc($2).
+.roc Climb at $temp ft per minute.
+.rocg Climb at $temp ft per minute or greater.
+.rocl Climb at $temp ft per minute or less.
+.rod Descend at $temp ft per minute.
+.rodg Descend at $temp ft per minute or greater.
+.rodl Descend at $temp ft per minute or less.
 .qnh QNH $altim($arr).
 .hold Hold over $uc($1) as published.
 .holdman Hold over $uc($1), inbound track $uc($2) degrees, $3 hand turns, $uc($4) minute legs.
@@ -190,28 +190,28 @@
 .drt Rechtskurve genehmigt.
 .dorbr Kreisen Sie rechts.
 .dorbl Kreisen Sie links.
-.dorbo Kreisen Sie über $uc($1).
+.dorbo Kreisen Sie über $1.
 .dorbn Kreisen Sie nördlich des Platzes.
 .dorbe Kreisen Sie östlich des Platzes.
 .dorbs Kreisen Sie südlich des Platzes.
 .dorbw Kreisen Sie westlich des Platzes.
-.dtc Fliegen Sie in die Platzrunde Piste $uc($1).
-.dtcr Fliegen Sie in die rechte Platzrunde Piste $uc($1).
+.dtc Fliegen Sie in die Platzrunde Piste $arrrwy.
+.dtcr Fliegen Sie in die rechte Platzrunde Piste $arrrwy.
 .dtfc Verkehrsinformation, $uc($1), melden Sie in Sicht.
 .dtfc2 Nummer 2, folgen Sie genanntem Verkehr.
-.ddown Fliegen Sie in den Gegenanflug Piste $uc($1).
-.ddownr Fliegen Sie in den rechten Gegenanflug Piste $uc($1).
+.ddown Fliegen Sie in den Gegenanflug Piste $arrrwy.
+.ddownr Fliegen Sie in den rechten Gegenanflug Piste $arrrwy.
 .ddownex Verlängern Sie Gegenanflug, warten Sie für Queranflug.
-.dbase Fliegen Sie in den Queranflug Piste $uc($1).
-.dbaser Fliegen Sie in den rechten Queranflug Piste $uc($1).
-.dfin Fliegen Sie in den Endanflug Piste $uc($1).
+.dbase Fliegen Sie in den Queranflug Piste $arrrwy.
+.dbaser Fliegen Sie in den rechten Queranflug Piste $arrrwy.
+.dfin Fliegen Sie in den Endanflug Piste $arrrwy.
 .dwake Vorsicht Wirbelschleppen.
-.dcft Wind $winds, Piste $deprwy, Start frei.
-.dctl Wind $winds, Piste $arrrwy, Landung frei.
-.dctll Wind $winds, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach links.
-.dctlr Wind $winds, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach rechts.
-.dctg Wind $winds, Piste $arrrwy, frei zum Aufsetzen und Durchstarten.
-.dcla Wind $winds, Piste $arrrwy, frei zum Tiefanflug.
+.dcft Wind $wind, Piste $deprwy, Start frei.
+.dctl Wind $wind, Piste $arrrwy, Landung frei.
+.dctll Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach links.
+.dctlr Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach rechts.
+.dctg Wind $wind, Piste $arrrwy, frei zum Aufsetzen und Durchstarten.
+.dcla Wind $wind, Piste $arrrwy, frei zum Tiefanflug.
 .drdy Melden Sie abflugbereit.
 .dstop Sofort anhalten. Halten Sie Position, Startfreigabe aufgehoben.
 .dga Starten Sie durch.
@@ -259,10 +259,10 @@
 .autoproceed Proceed direct $uc($1).
 .autoclearedils Cleared ILS approach runway $arrrwy.
 .autoclearedvisual Cleared visual approach runway $arrrwy.
-.autoclimblevel Climb to flight level $uc($1).
-.autoclimbaltitude Climb to altitude $uc($1)ft., QNH $altim($dep).
-.autodescendlevel Descend to flight level $uc($1).
-.autodescendaltitude Descend to altitude $uc($1)ft, QNH $altim($arr).
+.autoclimblevel Climb to flight level $temp.
+.autoclimbaltitude Climb to altitude $temp ft., QNH $altim($dep).
+.autodescendlevel Descend to flight level $temp.
+.autodescendaltitude Descend to altitude $temp ft, QNH $altim($arr).
 .autospeed Fly speed $uc($1) knots.
 .automach Fly speed Mach $uc($1).
 .autonospeed Resume normal speed.
