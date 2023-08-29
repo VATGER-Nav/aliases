@@ -40,8 +40,8 @@
 .ts Taxi to stand $uc($1) via $uc($2).
 .tgat Taxi to the GAT via $uc($1).
 .th Taxi via $uc($1), hold short of $uc($2).
-.ct Continue taxi.
 .te Taxi to entry $uc($1) via $uc($2).
+.ct Continue taxi.
 .hs Hold short of $uc($1).
 .gw Give way to $1.
 
@@ -72,19 +72,19 @@
 .id Identified.
 .c Climb to flight level $temp.
 .ca Climb to altitude $temp ft.
-.cvs Climb via SID to flight level $temp.
+.cv Climb via SID to flight level $temp.
 .d Descend to flight level $temp.
 .da Descend to altitude $temp ft.
 .daq Descend to altitude $temp ft, QNH $altim($arr).
-.dva Descend via STAR to flight level $temp.
-.dtr Descend to reach flight level $temp at $uc($2).
+.dvf Descend via STAR to flight level $temp.
+.dva Descend via STAR to altitude $temp ft, QNH $altim(arr).
+.dtr When ready, descend to reach flight level $temp at $uc($2).
 .roc Climb at $temp ft per minute.
 .rocg Climb at $temp ft per minute or greater.
 .rocl Climb at $temp ft per minute or less.
 .rod Descend at $temp ft per minute.
 .rodg Descend at $temp ft per minute or greater.
 .rodl Descend at $temp ft per minute or less.
-.qnh QNH $altim($arr).
 .hold Hold over $uc($1) as published.
 .holdman Hold over $uc($1), inbound track $uc($2) degrees, $3 hand turns, $uc($4) minute legs.
 .h Fly heading $uc($1).
@@ -114,9 +114,9 @@
 .eg Expect GLS approach runway $arrrwy.
 .egy Expect GLS Y approach runway $arrrwy.
 .egz Expect GLS Z approach runway $arrrwy.
-.el Expect localizer approach runway $arrrwy.
-.ely Expect localizer Y approach runway $arrrwy.
-.elz Expect localizer Z approach runway $arrrwy.
+.el Expect LOC approach runway $arrrwy.
+.ely Expect LOC Y approach runway $arrrwy.
+.elz Expect LOC Z approach runway $arrrwy.
 .evis Expect visual approach runway $arrrwy.
 .ci Cleared ILS approach runway $arrrwy.
 .cix Cleared ILS X approach runway $arrrwy.
@@ -242,13 +242,13 @@
 .helpkb You can find a lot of helpful information in the VATSIM Germany Knowledgebase (https://kb.vatger.de).
 .helpiata You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign.
 .helpequip You have not filed an equipment code (or have filed one that is most likely incorrect). Please keep in mind that filing a correct equipment code helps controllers to quickly see what type of procedures you are able to fly etc. You can learn more about equipment codes at https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf.
-.helpcx Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
+.helpxc Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
 .helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
 
 --- WARNINGS ---
 .warncoc If you are unable to comply with ATC instructions (as required by Code of Conduct section B8), we strongly recommend you disconnect from the network and acquire the skills necessary for flying on VATSIM in order to keep it fun for everyone, including controllers and other pilots. Otherwise, ATC will need to involve a supervisor.
-.warnhs You have not followed a hold short instruction. A hold short instruction requires you to hold before the taxiway/stopbar/runway hold short line you are instructed to hold short of so that other aircraft can still maneouver on that taxiway.
-.warnpush You are pushing back without clearance. HOLD POSITION IMMEDIATELY and return to your parking position. In Germany, pushback always requires an explicit clearance as all ramp areas are controlled. Note that Delivery does not issue pushback clearances and the phrase "startup approved" does not include clearance for pushback.
+.warnhs You have not followed a hold short instruction. A hold short instruction requires you to hold before the taxiway/stopbar/runway hold short line you are instructed to hold short of so that other aircraft can still maneouver on that taxiway/runway.
+.warnpush You are pushing back without clearance. STOP YOUR PUSHBACK IMMEDIATELY and RETURN TO YOUR PARKING POSITION. In Germany, pushback always requires an explicit clearance as all ramp areas are controlled. Note that Delivery does not issue pushback clearances and the phrase "startup approved" does not include clearance for pushback.
 .warnrdy It appears you have requested a clearance without being ready to comply with it. Please only request startup, pushback, and taxi once you are ready to comply with the appropriate clearance within the next minute. If a problem arises after you have received your clearance, notify ATC immediately so they can find a different solution.
 .warnvac You have not correctly vacated the runway. Your aircraft needs to be past the appropriate runway hold short line in its entirety before you are considered off the runway. Do not stop moving until this is ensured to avoid causing go arounds for following traffic and/or delays for pending departures.
 .warnemer CANCEL YOUR EMERGENCY IMMEDIATELY or disconnect from the network (as required by Code of Conduct section B6).
