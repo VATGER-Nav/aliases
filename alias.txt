@@ -76,7 +76,7 @@
 .d Descend to flight level $temp.
 .da Descend to altitude $temp ft.
 .daq Descend to altitude $temp ft, QNH $altim($arr).
-.dvf Descend via STAR to flight level $temp.
+.dv Descend via STAR to flight level $temp.
 .dva Descend via STAR to altitude $temp ft, QNH $altim(arr).
 .dtr When ready, descend to reach flight level $temp at $uc($2).
 .roc Climb at $temp ft per minute.
