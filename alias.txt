@@ -4,14 +4,14 @@
 .co Contact $radioname($1), $freq($1).
 .costby Standby for $radioname($1), $freq($1).
 .uni Monitor Unicom, 122.800.
-.nma You are not in my airspace, switch back to Unicom 122.800.
+.nma You are not in my airspace, switch back to Unicom, 122.800.
 .wf Wrong frequency, check again with the previous controller.
 .stby Standby.
 .rgr Roger.
 .close All stations, I'm closing, monitor Unicom, 122.800.
 .dis Disregard.
 .una Unable.
-.wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8), specifically $1.
+.wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
 .wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
 
@@ -19,11 +19,12 @@
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens.
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.tobt Set your TOBT (target off-block time) at https://vacdm.vatger.de.
-.tsat You can find your current TSAT and the VDGS with personalized departure information at https://vacdm.vatger.de.
+.tobt Set your TOBT at https://vacdm.vatger.de.
+.tsat You can find your current TSAT at https://vacdm.vatger.de.
 .clr Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
 .clrv Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
-.clrvec Cleared to $arr, radar vectored departure, flight planned route, climb on runway track to $temp, squawk $squawk.
+.clrvec Cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk.
+.clrvis Cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk.
 .atis Check information $uc($1).
 .rbr Readback correct, report ready.
 .su Start-up approved.
@@ -59,8 +60,8 @@
 .ga Go around.
 .map Follow the published missed approach procedure.
 .lu Line up runway $deprwy.
-.ludep Behind next departing $uc($1), line up runway $deprwy, behind.
-.luarr Behind next arriving $uc($1), line up runway $deprwy, behind.
+.ludep Behind next departing $1, line up runway $deprwy, behind.
+.luarr Behind next arriving $1, line up runway $deprwy, behind.
 .late Expect late landing clearance.
 
 --- RADAR ---
@@ -77,21 +78,21 @@
 .da Descend to altitude $temp ft.
 .daq Descend to altitude $temp ft, QNH $altim($arr).
 .dv Descend via STAR to flight level $temp.
-.dva Descend via STAR to altitude $temp ft, QNH $altim(arr).
+.dva Descend via STAR to altitude $temp ft, QNH $altim($arr).
 .dtr When ready, descend to reach flight level $temp at $uc($2).
-.roc Climb at $temp ft per minute.
-.rocg Climb at $temp ft per minute or greater.
-.rocl Climb at $temp ft per minute or less.
-.rod Descend at $temp ft per minute.
-.rodg Descend at $temp ft per minute or greater.
-.rodl Descend at $temp ft per minute or less.
+.roc Climb at $1 ft per minute.
+.rocg Climb at $1 ft per minute or greater.
+.rocl Climb at $1 ft per minute or less.
+.rod Descend at $1 ft per minute.
+.rodg Descend at $1 ft per minute or greater.
+.rodl Descend at $1 ft per minute or less.
 .hold Hold over $uc($1) as published.
-.holdman Hold over $uc($1), inbound track $uc($2) degrees, $3 hand turns, $uc($4) minute legs.
-.h Fly heading $uc($1).
-.hl Turn left heading $uc($1).
-.hr Turn right heading $uc($1).
-.hbl Turn left $uc($1) degrees.
-.hbr Turn right $uc($1) degrees.
+.holdman Hold over $uc($1), inbound track $2 degrees, $3 hand turns, $4 minute legs.
+.h Fly heading $1.
+.hl Turn left heading $1.
+.hr Turn right heading $1.
+.hbl Turn left $1 degrees.
+.hbr Turn right $1 degrees.
 .hc Continue present heading.
 .pd Proceed direct $uc($1).
 .star Cleared $star arrival.
@@ -135,22 +136,22 @@
 .cly Cleared localizer Y approach runway $arrrwy.
 .clz Cleared localizer Z approach runway $arrrwy.
 .cvis Cleared visual approach runway $arrrwy.
-.spd Fly speed $uc($1) knots.
-.spdg Fly speed $uc($1) knots or greater.
-.spdl Fly speed $uc($1) knots or less.
-.spdu Fly speed $uc($1) knots until $uc($2) miles final.
-.spdug Fly speed $uc($1) knots or greater until $uc($2) miles final.
-.spdul Fly speed $uc($1) knots or less until $uc($2) miles final.
-.spdm Maintain Mach .$uc($1).
-.spdmg Maintain Mach .$uc($1) or greater.
-.spdml Maintain Mach .$uc($1) or less.
+.spd Fly speed $1 knots.
+.spdg Fly speed $1 knots or greater.
+.spdl Fly speed $1 knots or less.
+.spdu Fly speed $1 knots until $2 miles final.
+.spdug Fly speed $1 knots or greater until $uc($2) miles final.
+.spdul Fly speed $1 knots or less until $uc($2) miles final.
+.spdm Maintain Mach .$1.
+.spdmg Maintain Mach .$1 or greater.
+.spdml Maintain Mach .$1 or less.
 .spdma Reduce to minimum approach speed.
 .spdmc Reduce to minimum clean speed.
 .spdn Resume normal speed.
 .spdh High speed approved.
 
 --- VFR English---
-.info Active runway $uc($1), QNH $uc($2).
+.info Active runway $uc($1), QNH $altim($2).
 .leave Leave control zone via $uc($1).
 .enter Enter control zone via $uc($1).
 .noctr Stay outside the CTR.
@@ -180,7 +181,7 @@
 .col Approved to leave frequency.
 
 --- VFR Deutsch ---
-.dinfo Aktive Piste $uc($1), QNH $uc($2).
+.dinfo Aktive Piste $uc($1), QNH $altim($2).
 .dleave Verlassen Sie die Kontrollzone über $uc($1).
 .denter Fliegen Sie in die Kontrollzone über $uc($1).
 .dnoctr Bleiben Sie außerhalb der Kontrollzone.
@@ -197,7 +198,7 @@
 .dorbw Kreisen Sie westlich des Platzes.
 .dtc Fliegen Sie in die Platzrunde Piste $arrrwy.
 .dtcr Fliegen Sie in die rechte Platzrunde Piste $arrrwy.
-.dtfc Verkehrsinformation, $uc($1), melden Sie in Sicht.
+.dtfc Verkehrsinformation, $1, melden Sie in Sicht.
 .dtfc2 Nummer 2, folgen Sie genanntem Verkehr.
 .ddown Fliegen Sie in den Gegenanflug Piste $arrrwy.
 .ddownr Fliegen Sie in den rechten Gegenanflug Piste $arrrwy.
