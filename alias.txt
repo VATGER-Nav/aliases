@@ -11,6 +11,7 @@
 .close All stations, I'm closing, monitor Unicom, 122.800.
 .dis Disregard.
 .una Unable.
+.q QNH $altim($1).
 .wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
 .wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
