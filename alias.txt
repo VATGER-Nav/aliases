@@ -14,6 +14,11 @@
 .wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
 .wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
+.ha Hallo!
+.ts Tschuess!
+.tsa Tschau!
+.gg Gruess Gott!
+.sv Servus!
 
 --- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens.
