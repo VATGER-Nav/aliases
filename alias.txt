@@ -11,6 +11,7 @@
 .close All stations, I'm closing, monitor Unicom, 122.800.
 .dis Disregard.
 .una Unable.
+.rbc Readback correct.
 .q QNH $altim($1).
 .wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
@@ -23,7 +24,9 @@
 .tobt Set your TOBT at https://vacdm.vatger.de.
 .tsat You can find your current TSAT at https://vacdm.vatger.de.
 .clr Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
+.clrs Startup approved. Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
 .clrv Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
+.clrvs Startup approved. Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
 .clrvec Cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk.
 .clrvis Cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk.
 .atis Check information $uc($1).
