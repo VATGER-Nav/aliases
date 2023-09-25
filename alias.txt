@@ -72,13 +72,13 @@
 .sqv Squawk VFR.
 .id Identified.
 .c Climb to flight level $temp.
-.ca Climb to altitude $temp ft.
+.ca Climb to altitude $temp.
 .cvs Climb via SID to flight level $temp.
 .d Descend to flight level $temp.
-.da Descend to altitude $temp ft.
-.daq Descend to altitude $temp ft, QNH $altim($arr).
+.da Descend to altitude $temp.
+.daq Descend to altitude $temp, QNH $altim($arr).
 .dvs Descend via STAR to flight level $temp.
-.dvsa Descend via STAR to altitude $temp ft, QNH $altim($arr).
+.dvsa Descend via STAR to altitude $temp, QNH $altim($arr).
 .dtr When ready, descend to reach flight level $temp at $uc($2).
 .roc Climb at $1 ft per minute.
 .rocg Climb at $1 ft per minute or greater.
@@ -263,9 +263,9 @@
 .autoclearedils Cleared ILS approach runway $arrrwy.
 .autoclearedvisual Cleared visual approach runway $arrrwy.
 .autoclimblevel Climb to flight level $temp.
-.autoclimbaltitude Climb to altitude $temp ft., QNH $altim($dep).
+.autoclimbaltitude Climb to altitude $temp, QNH $altim($dep).
 .autodescendlevel Descend to flight level $temp.
-.autodescendaltitude Descend to altitude $temp ft, QNH $altim($arr).
+.autodescendaltitude Descend to altitude $temp, QNH $altim($arr).
 .autospeed Fly speed $uc($1) knots.
 .automach Fly speed Mach $uc($1).
 .autonospeed Resume normal speed.
