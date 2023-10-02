@@ -49,6 +49,7 @@
 .ct Continue taxi.
 .hs Hold short of $uc($1).
 .gw Give way to $1.
+.xr Cross runway $uc($1).
 
 --- TOWER ---
 .cft Wind $wind, runway $deprwy, cleared for take-off.
@@ -234,6 +235,7 @@
 .dte Rollen Sie zu Entry $uc($1) über $uc($2).
 .dhs Halten Sie vor $uc($1).
 .dgw Gewähren Sie $1 Vorfahrt.
+.dxr Überqueren Sie Piste $uc($1).
 .dcol Verlassen der Frequenz genehmigt.
 
 --- HELP ---
