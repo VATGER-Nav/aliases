@@ -1,0 +1,28 @@
+name: Multi-Team Approval Check
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  multi-team-approval:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11 # Replace with your desired Python version
+
+      - name: Install PyGithub library
+        run: pip install PyGithub
+
+      - name: Multi-Team Approval Check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python multi_team_approval.py
