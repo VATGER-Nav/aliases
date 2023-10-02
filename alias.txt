@@ -179,7 +179,7 @@
 .down Join downwind runway $uc($1).
 .downr Join right downwind runway $uc($1).
 .downex Extend downwind, standby for base.
-.rdownex Extend right downwind, standby for base.
+.downrex Extend right downwind, standby for base.
 .base Join base runway $uc($1).
 .baser Join right base runway $uc($1).
 .fin Join final runway $uc($1).
@@ -209,7 +209,7 @@
 .ddown Fliegen Sie in den Gegenanflug Piste $arrrwy.
 .ddownr Fliegen Sie in den rechten Gegenanflug Piste $arrrwy.
 .ddownex Verlängern Sie Gegenanflug, warten Sie für Queranflug.
-.drdownex Verlängern Sie rechten Gegenanflug, warten Sie für Queranflug.
+.ddownrex Verlängern Sie rechten Gegenanflug, warten Sie für Queranflug.
 .dbase Fliegen Sie in den Queranflug Piste $arrrwy.
 .dbaser Fliegen Sie in den rechten Queranflug Piste $arrrwy.
 .dfin Fliegen Sie in den Endanflug Piste $arrrwy.
