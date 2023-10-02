@@ -254,6 +254,7 @@
 .help833 You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 <frequency>" in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833.
 .helpxc Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
 .helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
+.helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH.
 
 --- WARNINGS ---
 .warncoc If you are unable to comply with ATC instructions (as required by Code of Conduct section B8), we strongly recommend you disconnect from the network and acquire the skills necessary for flying on VATSIM in order to keep it fun for everyone, including controllers and other pilots. Otherwise, ATC will need to involve a supervisor.
