@@ -267,17 +267,17 @@
 .twy You have connected on an active taxiway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
 
 --- AUTOTEXT MESSAGES ---
-.autoproceed Proceed direct $uc($1).
-.autoclearedils Cleared ILS approach runway $arrrwy.
-.autoclearedvisual Cleared visual approach runway $arrrwy.
-.autoclimblevel Climb to flight level $temp.
-.autoclimbaltitude Climb to altitude $temp, QNH $altim($dep).
-.autodescendlevel Descend to flight level $temp.
-.autodescendaltitude Descend to altitude $temp, QNH $altim($arr).
-.autospeed Fly speed $uc($1) knots.
-.automach Fly speed Mach $uc($1).
+.autoproceed Proceed direct $1.
+.autoclearedils Cleared ILS approach RWY $uc($1).
+.autoclearedvisual Cleared visual approach RWY $uc($1).
+.autoclimblevel Climb FL $1. 
+.autoclimbaltitude Climb $1 ft, QNH $altim($dep).
+.autodescendlevel Descend FL $1.
+.autodescendaltitude Descend $1 ft, QNH $altim($arr).
+.autospeed Speed $1 KT indicated.
+.automach Mach number $1.
 .autonospeed Resume normal speed.
-.autoturnleft Turn left heading $uc($1).
-.autoturnright Turn right heading $uc($1).
-.autocontact Contact $radioname($1), $freq($1).
-.autosquawk Squawk $squawk.
+.autoturnleft Turn left heading $1.
+.autoturnright Turn right heading $1.
+.autocontact Contact $1 $2. Bye bye.
+.autosquawk Squawk $1.
