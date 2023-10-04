@@ -1,8 +1,8 @@
-.ha Hallo!
-.tss Tschuess!
-.tsa Tschau!
-.gg Gruess Gott!
-.sv Servus!
+.ha hallo
+.tss tschuess
+.tsa tschau
+.gg gruess Gott
+.sv servus
 
 .inf information $atiscode
 .infc information $atiscode correct
