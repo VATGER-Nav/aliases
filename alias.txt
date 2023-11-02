@@ -256,17 +256,6 @@
 .helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
 .helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH.
 
---- WARNINGS ---
-.warncoc If you are unable to comply with ATC instructions (as required by Code of Conduct section B8), we strongly recommend you disconnect from the network and acquire the skills necessary for flying on VATSIM in order to keep it fun for everyone, including controllers and other pilots. Otherwise, ATC will need to involve a supervisor.
-.warnhs You have not followed a hold short instruction. A hold short instruction requires you to hold before the taxiway/stopbar/runway hold short line you are instructed to hold short of so that other aircraft can still maneouver on that taxiway/runway.
-.warnpush You are pushing back without clearance. STOP YOUR PUSHBACK IMMEDIATELY and RETURN TO YOUR PARKING POSITION. In Germany, pushback always requires an explicit clearance as all ramp areas are controlled. Note that Delivery does not issue pushback clearances and the phrase "startup approved" does not include clearance for pushback.
-.warnrdy It appears you have requested a clearance without being ready to comply with it. Please only request startup, pushback, and taxi once you are ready to comply with the appropriate clearance within the next minute. If a problem arises after you have received your clearance, notify ATC immediately so they can find a different solution.
-.warnvac You have not correctly vacated the runway. Your aircraft needs to be past the appropriate runway hold short line in its entirety before you are considered off the runway. Do not stop moving until this is ensured to avoid causing go arounds for following traffic and/or delays for pending departures.
-.warnemer CANCEL YOUR EMERGENCY IMMEDIATELY or disconnect from the network (as required by Code of Conduct section B6).
-.warnvsoa You appear to be taking part in a VSOA-restricted mission. If you are not part of an VSOA, we recommend you stop this activity immediately; otherwise, a supervisor might remove you from the network. You can find more information on the VATSIM Special Operations Policy at https://vatsim.net/docs/policy/vsoa-ppm.
-.rwy You have connected on an active runway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
-.twy You have connected on an active taxiway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
-
 --- AUTOTEXT MESSAGES ---
 .autoproceed Proceed direct $uc($1).
 .autoclearedils Cleared ILS approach runway $arrrwy.
