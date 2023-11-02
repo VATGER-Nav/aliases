@@ -1,17 +1,17 @@
 --- GENERAL ---
-.r Report $1.
-.rpos Report your position.
-.co Contact $radioname($1), $freq($1).
-.costby Standby for $radioname($1), $freq($1).
-.uni Monitor Unicom, 122.800.
-.nma You are not in my airspace, switch back to Unicom, 122.800.
-.wf Wrong frequency, check again with the previous controller.
-.stby Standby.
-.rgr Roger.
-.close All stations, I'm closing, monitor Unicom, 122.800.
-.dis Disregard.
-.una Unable.
-.rbc Readback correct.
+.r report $1.
+.rpos report your position.
+.co contact $radioname($1), $freq($1).
+.costby standby for $radioname($1), $freq($1).
+.uni monitor Unicom, 122.800.
+.nma you are not in my airspace, switch back to Unicom, 122.800.
+.wf wrong frequency, check again with the previous controller.
+.stby standby.
+.rgr roger.
+.close all stations, I'm closing, monitor Unicom, 122.800.
+.dis disregard.
+.una unable.
+.rbc readback correct.
 .q QNH $altim($1).
 .wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
@@ -21,198 +21,198 @@
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens.
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.tobt Set your TOBT at https://vacdm.vatger.de.
+.tobt please set your TOBT at https://vacdm.vatger.de.
 .tsat You can find your current TSAT at https://vacdm.vatger.de.
-.clr Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
-.clrs Startup approved. Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
-.clrv Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
-.clrvs Startup approved. Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
-.clrvec Cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk.
-.clrvis Cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk.
-.atis Check information $uc($1).
-.rbr Readback correct, report ready.
-.su Start-up approved.
-.suco Start-up approved. Hold position. Contact $radioname($1) on $freq($1).
+.clr cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
+.clrs startup approved. Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
+.clrv cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
+.clrvs startup approved. Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
+.clrvec cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk.
+.clrvis cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk.
+.atis check information $uc($1).
+.rbr readback correct, report ready.
+.su start-up approved.
+.suco start-up approved. Hold position. Contact $radioname($1) on $freq($1).
 
 --- GROUND ---
-.p Pushback approved.
-.pn Pushback approved, face North.
-.pe Pushback approved, face East.
-.ps Pushback approved, face South.
-.pw Pushback approved, face West.
-.hp Hold position.
-.t Taxi to holding point runway $deprwy via $uc($1).
-.ts Taxi to stand $uc($1) via $uc($2).
-.tgat Taxi to the GAT via $uc($1).
-.th Taxi via $uc($1), hold short of $uc($2).
-.te Taxi to entry $uc($1) via $uc($2).
-.ct Continue taxi.
-.hs Hold short of $uc($1).
-.gw Give way to $1.
-.xr Cross runway $uc($1).
+.p pushback approved.
+.pn pushback approved, face North.
+.pe pushback approved, face East.
+.ps pushback approved, face South.
+.pw pushback approved, face West.
+.hp hold position.
+.t taxi to holding point runway $deprwy via $uc($1).
+.ts taxi to stand $uc($1) via $uc($2).
+.tgat taxi to the GAT via $uc($1).
+.th taxi via $uc($1), hold short of $uc($2).
+.te taxi to entry $uc($1) via $uc($2).
+.ct continue taxi.
+.hs hold short of $uc($1).
+.gw give way to $1.
+.xr cross runway $uc($1).
 
 --- TOWER ---
-.cft Wind $wind, runway $deprwy, cleared for take-off.
-.cfit Wind $wind, runway $deprwy, cleared for immediate take-off.
-.ctl Wind $wind, runway $arrrwy, cleared to land.
-.ctll Wind $wind, runway $arrrwy, cleared to land, vacate left.
-.ctlr Wind $wind, runway $arrrwy, cleared to land, vacate right.
-.ctg Wind $wind, runway $arrrwy, cleared touch and go.
-.cla Wind $wind, runway $arrrwy, cleared low approach.
-.rdy Report ready for departure.
-.rdyimm Are you ready for immediate departure?
-.stop Stop immediately. Hold position, cancel take-off.
-.ga Go around.
-.map Follow the published missed approach procedure.
-.lu Line up runway $deprwy.
-.ludep Behind next departing $1, line up runway $deprwy, behind.
-.luarr Behind next arriving $1, line up runway $deprwy, behind.
-.late Expect late landing clearance.
+.cft wind $wind, runway $deprwy, cleared for take-off.
+.cfit wind $wind, runway $deprwy, cleared for immediate take-off.
+.ctl wind $wind, runway $arrrwy, cleared to land.
+.ctll wind $wind, runway $arrrwy, cleared to land, vacate left.
+.ctlr wind $wind, runway $arrrwy, cleared to land, vacate right.
+.ctg wind $wind, runway $arrrwy, cleared touch and go.
+.cla wind $wind, runway $arrrwy, cleared low approach.
+.rdy report ready for departure.
+.rdyimm are you ready for immediate departure?
+.stop stop immediately. Hold position, cancel take-off.
+.ga go around.
+.map follow the published missed approach procedure.
+.lu line up runway $deprwy.
+.ludep behind next departing $1, line up runway $deprwy, behind.
+.luarr behind next arriving $1, line up runway $deprwy, behind.
+.late expect late landing clearance.
 
 --- RADAR ---
-.sq Squawk $squawk.
-.sqi Squawk Ident.
-.sqc Squawk Charlie.
-.sqstby Squawk Standby.
-.sqv Squawk VFR.
-.id Identified.
-.c Climb to flight level $temp.
-.ca Climb to altitude $temp.
-.cvs Climb via SID to flight level $temp.
-.d Descend to flight level $temp.
-.da Descend to altitude $temp.
-.daq Descend to altitude $temp, QNH $altim($arr).
-.dvs Descend via STAR to flight level $temp.
-.dvsa Descend via STAR to altitude $temp, QNH $altim($arr).
-.dtr When ready, descend to reach flight level $temp at $uc($2).
-.roc Climb at $1 ft per minute.
-.rocg Climb at $1 ft per minute or greater.
-.rocl Climb at $1 ft per minute or less.
-.rod Descend at $1 ft per minute.
-.rodg Descend at $1 ft per minute or greater.
-.rodl Descend at $1 ft per minute or less.
-.hold Hold over $uc($1) as published.
-.holdman Hold over $uc($1), inbound track $2 degrees, $3 hand turns, $4 minute legs.
-.h Fly heading $1.
-.hl Turn left heading $1.
-.hr Turn right heading $1.
-.hbl Turn left $1 degrees.
-.hbr Turn right $1 degrees.
-.hc Continue present heading.
-.pd Proceed direct $uc($1).
-.star Cleared $star arrival.
-.trans Cleared $star transition.
-.ri Report speed.
-.rm Report mach number.
-.ra Report altitude.
-.rf Report flight level.
-.rh Report heading.
-.ei Expect ILS approach runway $arrrwy.
-.eix Expect ILS X approach runway $arrrwy.
-.eiy Expect ILS Y approach runway $arrrwy.
-.eiz Expect ILS Z approach runway $arrrwy.
-.er Expect RNP approach runway $arrrwy.
-.erx Expect RNP X approach runway $arrrwy.
-.ery Expect RNP Y approach runway $arrrwy.
-.erz Expect RNP Z approach runway $arrrwy.
-.ev Expect VOR approach runway $arrrwy.
-.en Expect NDB approach runway $arrrwy.
-.eg Expect GLS approach runway $arrrwy.
-.egy Expect GLS Y approach runway $arrrwy.
-.egz Expect GLS Z approach runway $arrrwy.
-.el Expect LOC approach runway $arrrwy.
-.ely Expect LOC Y approach runway $arrrwy.
-.elz Expect LOC Z approach runway $arrrwy.
-.evis Expect visual approach runway $arrrwy.
-.ci Cleared ILS approach runway $arrrwy.
-.cix Cleared ILS X approach runway $arrrwy.
-.ciy Cleared ILS Y approach runway $arrrwy.
-.ciz Cleared ILS Z approach runway $arrrwy.
-.cr Cleared RNP approach runway $arrrwy.
-.crx Cleared RNP X approach runway $arrrwy.
-.cry Cleared RNP Y approach runway $arrrwy.
-.crz Cleared RNP Z approach runway $arrrwy.
-.cv Cleared VOR approach runway $arrrwy.
-.cn Cleared NDB approach runway $arrrwy.
-.cg Cleared GLS approach runway $arrrwy.
-.cgy Cleared GLS Y approach runway $arrrwy.
-.cgz Cleared GLS Z approach runway $arrrwy.
-.cl Cleared localizer approach runway $arrrwy.
-.cly Cleared localizer Y approach runway $arrrwy.
-.clz Cleared localizer Z approach runway $arrrwy.
-.cvis Cleared visual approach runway $arrrwy.
-.spd Fly speed $1 knots.
-.spdg Fly speed $1 knots or greater.
-.spdl Fly speed $1 knots or less.
-.spdu Fly speed $1 knots until $2 miles final.
-.spdug Fly speed $1 knots or greater until $uc($2) miles final.
-.spdul Fly speed $1 knots or less until $uc($2) miles final.
-.spdm Maintain Mach .$1.
-.spdmg Maintain Mach .$1 or greater.
-.spdml Maintain Mach .$1 or less.
-.spdma Reduce to minimum approach speed.
-.spdmc Reduce to minimum clean speed.
-.spdn Resume normal speed.
-.spdh High speed approved.
+.sq squawk $squawk.
+.sqi squawk Ident.
+.sqc squawk Charlie.
+.sqstby squawk Standby.
+.sqv squawk VFR.
+.id identified.
+.c climb to flight level $temp.
+.ca climb to altitude $temp.
+.cvs climb via SID to flight level $temp.
+.d descend to flight level $temp.
+.da descend to altitude $temp.
+.daq descend to altitude $temp, QNH $altim($arr).
+.dvs descend via STAR to flight level $temp.
+.dvsa descend via STAR to altitude $temp, QNH $altim($arr).
+.dtr when ready, descend to reach flight level $temp at $uc($2).
+.roc climb at $1 ft per minute.
+.rocg climb at $1 ft per minute or greater.
+.rocl climb at $1 ft per minute or less.
+.rod descend at $1 ft per minute.
+.rodg descend at $1 ft per minute or greater.
+.rodl descend at $1 ft per minute or less.
+.hold hold over $uc($1) as published.
+.holdman hold over $uc($1), inbound track $2 degrees, $3 hand turns, $4 minute legs.
+.h fly heading $1.
+.hl turn left heading $1.
+.hr turn right heading $1.
+.hbl turn left $1 degrees.
+.hbr turn right $1 degrees.
+.hc continue present heading.
+.pd proceed direct $uc($1).
+.star cleared $star arrival.
+.trans cleared $star transition.
+.ri report speed.
+.rm report mach number.
+.ra report altitude.
+.rf report flight level.
+.rh report heading.
+.ei expect ILS approach runway $arrrwy.
+.eix expect ILS X approach runway $arrrwy.
+.eiy expect ILS Y approach runway $arrrwy.
+.eiz expect ILS Z approach runway $arrrwy.
+.er expect RNP approach runway $arrrwy.
+.erx expect RNP X approach runway $arrrwy.
+.ery expect RNP Y approach runway $arrrwy.
+.erz expect RNP Z approach runway $arrrwy.
+.ev expect VOR approach runway $arrrwy.
+.en expect NDB approach runway $arrrwy.
+.eg expect GLS approach runway $arrrwy.
+.egy expect GLS Y approach runway $arrrwy.
+.egz expect GLS Z approach runway $arrrwy.
+.el expect LOC approach runway $arrrwy.
+.ely expect LOC Y approach runway $arrrwy.
+.elz expect LOC Z approach runway $arrrwy.
+.evis expect visual approach runway $arrrwy.
+.ci cleared ILS approach runway $arrrwy.
+.cix cleared ILS X approach runway $arrrwy.
+.ciy cleared ILS Y approach runway $arrrwy.
+.ciz cleared ILS Z approach runway $arrrwy.
+.cr cleared RNP approach runway $arrrwy.
+.crx cleared RNP X approach runway $arrrwy.
+.cry cleared RNP Y approach runway $arrrwy.
+.crz cleared RNP Z approach runway $arrrwy.
+.cv cleared VOR approach runway $arrrwy.
+.cn cleared NDB approach runway $arrrwy.
+.cg cleared GLS approach runway $arrrwy.
+.cgy cleared GLS Y approach runway $arrrwy.
+.cgz cleared GLS Z approach runway $arrrwy.
+.cl cleared localizer approach runway $arrrwy.
+.cly cleared localizer Y approach runway $arrrwy.
+.clz cleared localizer Z approach runway $arrrwy.
+.cvis cleared visual approach runway $arrrwy.
+.spd fly speed $1 knots.
+.spdg fly speed $1 knots or greater.
+.spdl fly speed $1 knots or less.
+.spdu fly speed $1 knots until $2 miles final.
+.spdug fly speed $1 knots or greater until $uc($2) miles final.
+.spdul fly speed $1 knots or less until $uc($2) miles final.
+.spdm maintain Mach .$1.
+.spdmg maintain Mach .$1 or greater.
+.spdml maintain Mach .$1 or less.
+.spdma reduce to minimum approach speed.
+.spdmc reduce to minimum clean speed.
+.spdn resume normal speed.
+.spdh high speed approved.
 
 --- VFR English---
-.info Runway $uc($1), QNH $altim($2).
-.leave Leave control zone via $uc($1).
-.enter Enter control zone via $uc($1).
-.noctr Stay outside the CTR.
-.nod Stay outside airspace class D.
-.noc Stay outside airspace class C.
-.rt Right turn approved.
-.orbr Orbit right.
-.orbl Orbit left.
-.orbo Hold visual over $uc($1).
-.orbn Orbit North of the field.
-.orbe Orbit East of the field.
-.orbs Orbit South of the field.
-.orbw Orbit West of the field.
-.360l Make a left 360.
-.360r Make a right 360.
-.tc Join traffic circuit runway $uc($1).
-.tcr Join right traffic circuit runway $uc($1).
-.tfc Traffic information, $uc($1), report in sight.
-.tfc2 Follow mentioned traffic, number 2.
-.down Join downwind runway $uc($1).
-.downr Join right downwind runway $uc($1).
-.downex Extend downwind, standby for base.
-.downrex Extend right downwind, standby for base.
-.base Join base runway $uc($1).
-.baser Join right base runway $uc($1).
-.fin Join final runway $uc($1).
-.wake Caution wake turbulence.
-.col Approved to leave frequency.
+.info runway $uc($1), QNH $altim($2).
+.leave leave control zone via $uc($1).
+.enter enter control zone via $uc($1).
+.noctr stay outside the CTR.
+.nod stay outside airspace class D.
+.noc stay outside airspace class C.
+.rt right turn approved.
+.orbr orbit right.
+.orbl orbit left.
+.orbo hold visual over $uc($1).
+.orbn orbit North of the field.
+.orbe orbit East of the field.
+.orbs orbit South of the field.
+.orbw orbit West of the field.
+.360l make a left 360.
+.360r make a right 360.
+.tc koin traffic circuit runway $uc($1).
+.tcr join right traffic circuit runway $uc($1).
+.tfc traffic information, $uc($1), report in sight.
+.tfc2 follow mentioned traffic, number 2.
+.down join downwind runway $uc($1).
+.downr join right downwind runway $uc($1).
+.downex extend downwind, standby for base.
+.downrex extend right downwind, standby for base.
+.base join base runway $uc($1).
+.baser join right base runway $uc($1).
+.fin join final runway $uc($1).
+.wake caution wake turbulence.
+.col approved to leave frequency.
 
 --- VFR Deutsch ---
 .dinfo Piste $uc($1), QNH $altim($2).
-.dleave Verlassen Sie die Kontrollzone über $uc($1).
-.denter Fliegen Sie in die Kontrollzone über $uc($1).
-.dnoctr Bleiben Sie außerhalb der Kontrollzone.
-.dnod Bleiben Sie außerhalb des Luftraum D.
-.dnoc Bleiben Sie außerhalb des Luftraum C.
-.dr Melden Sie $1.
+.dleave verlassen Sie die Kontrollzone über $uc($1).
+.denter fliegen Sie in die Kontrollzone über $uc($1).
+.dnoctr bleiben Sie außerhalb der Kontrollzone.
+.dnod bleiben Sie außerhalb des Luftraum D.
+.dnoc bleiben Sie außerhalb des Luftraum C.
+.dr melden Sie $1.
 .drt Rechtskurve genehmigt.
-.dorbr Kreisen Sie rechts.
-.dorbl Kreisen Sie links.
-.dorbo Kreisen Sie über $1.
-.dorbn Kreisen Sie nördlich des Platzes.
-.dorbe Kreisen Sie östlich des Platzes.
-.dorbs Kreisen Sie südlich des Platzes.
-.dorbw Kreisen Sie westlich des Platzes.
-.dtc Fliegen Sie in die Platzrunde Piste $arrrwy.
-.dtcr Fliegen Sie in die rechte Platzrunde Piste $arrrwy.
+.dorbr kreisen Sie rechts.
+.dorbl kreisen Sie links.
+.dorbo kreisen Sie über $1.
+.dorbn kreisen Sie nördlich des Platzes.
+.dorbe kreisen Sie östlich des Platzes.
+.dorbs kreisen Sie südlich des Platzes.
+.dorbw kreisen Sie westlich des Platzes.
+.dtc fliegen Sie in die Platzrunde Piste $arrrwy.
+.dtcr fliegen Sie in die rechte Platzrunde Piste $arrrwy.
 .dtfc Verkehrsinformation, $1, melden Sie in Sicht.
 .dtfc2 Nummer 2, folgen Sie genanntem Verkehr.
-.ddown Fliegen Sie in den Gegenanflug Piste $arrrwy.
-.ddownr Fliegen Sie in den rechten Gegenanflug Piste $arrrwy.
-.ddownex Verlängern Sie Gegenanflug, warten Sie für Queranflug.
-.ddownrex Verlängern Sie rechten Gegenanflug, warten Sie für Queranflug.
-.dbase Fliegen Sie in den Queranflug Piste $arrrwy.
-.dbaser Fliegen Sie in den rechten Queranflug Piste $arrrwy.
-.dfin Fliegen Sie in den Endanflug Piste $arrrwy.
+.ddown fliegen Sie in den Gegenanflug Piste $arrrwy.
+.ddownr fliegen Sie in den rechten Gegenanflug Piste $arrrwy.
+.ddownex verlängern Sie Gegenanflug, warten Sie für Queranflug.
+.ddownrex verlängern Sie rechten Gegenanflug, warten Sie für Queranflug.
+.dbase fliegen Sie in den Queranflug Piste $arrrwy.
+.dbaser fliegen Sie in den rechten Queranflug Piste $arrrwy.
+.dfin fliegen Sie in den Endanflug Piste $arrrwy.
 .dwake Vorsicht Wirbelschleppen.
 .dcft Wind $wind, Piste $deprwy, Start frei.
 .dctl Wind $wind, Piste $arrrwy, Landung frei.
@@ -220,22 +220,22 @@
 .dctlr Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach rechts.
 .dctg Wind $wind, Piste $arrrwy, frei zum Aufsetzen und Durchstarten.
 .dcla Wind $wind, Piste $arrrwy, frei zum Tiefanflug.
-.drdy Melden Sie abflugbereit.
-.dstop Halten Sie Position, Startfreigabe aufgehoben, ich wiederhole, Startfreigabe aufgehoben.
-.dga Starten Sie durch.
-.dlu Rollen Sie zum Abflugpunkt Piste $deprwy.
-.dludep Hinter nächster abfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter.
-.dluarr Hinter nächster anfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter.
-.dhp Halten Sie Position.
-.dt Rollen Sie zum Rollhalt Piste $deprwy über $uc($1).
-.dts Rollen Sie zu Parkposition $uc($1) über $uc($2).
-.dtgat Rollen Sie zum Abstellplatz der Allgemeinen Luftfahrt über $uc($1).
-.dth Rollen Sie über $uc($1), halten Sie vor $uc($2).
-.dct Rollen Sie weiter.
-.dte Rollen Sie zu Entry $uc($1) über $uc($2).
-.dhs Halten Sie vor $uc($1).
-.dgw Gewähren Sie $1 Vorfahrt.
-.dxr Überqueren Sie Piste $uc($1).
+.drdy melden Sie abflugbereit.
+.dstop halten Sie Position, Startfreigabe aufgehoben, ich wiederhole, Startfreigabe aufgehoben.
+.dga starten Sie durch.
+.dlu rollen Sie zum Abflugpunkt Piste $deprwy.
+.dludep hinter nächster abfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter.
+.dluarr hinter nächster anfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter.
+.dhp halten Sie Position.
+.dt rollen Sie zum Rollhalt Piste $deprwy über $uc($1).
+.dts rollen Sie zu Parkposition $uc($1) über $uc($2).
+.dtgat rollen Sie zum Abstellplatz der Allgemeinen Luftfahrt über $uc($1).
+.dth rollen Sie über $uc($1), halten Sie vor $uc($2).
+.dct rollen Sie weiter.
+.dte rollen Sie zu Entry $uc($1) über $uc($2).
+.dhs halten Sie vor $uc($1).
+.dgw gewähren Sie $1 Vorfahrt.
+.dxr überqueren Sie Piste $uc($1).
 .dcol Verlassen der Frequenz genehmigt.
 
 --- HELP ---
