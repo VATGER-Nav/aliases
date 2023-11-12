@@ -1,4 +1,4 @@
---- GENERAL ---
+;--- GENERAL ---
 .r report $1.
 .rpos report your position.
 .co contact $radioname($1), $freq($1).
@@ -17,7 +17,7 @@
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
 .wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
 
---- DELIVERY ---
+;--- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens.
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
@@ -34,7 +34,7 @@
 .su start-up approved.
 .suco start-up approved. Hold position. Contact $radioname($1) on $freq($1).
 
---- GROUND ---
+;--- GROUND ---
 .p pushback approved.
 .pn pushback approved, face North.
 .pe pushback approved, face East.
@@ -51,7 +51,7 @@
 .gw give way to $1.
 .xr cross runway $uc($1).
 
---- TOWER ---
+;--- TOWER ---
 .cft wind $wind, runway $deprwy, cleared for take-off.
 .cfit wind $wind, runway $deprwy, cleared for immediate take-off.
 .ctl wind $wind, runway $arrrwy, cleared to land.
@@ -69,7 +69,7 @@
 .luarr behind next arriving $1, line up runway $deprwy, behind.
 .late expect late landing clearance.
 
---- RADAR ---
+;--- RADAR ---
 .sq squawk $squawk.
 .sqi squawk Ident.
 .sqc squawk Charlie.
@@ -155,7 +155,7 @@
 .spdn resume normal speed.
 .spdh high speed approved.
 
---- VFR English---
+;--- VFR English---
 .info runway $uc($1), QNH $altim($2).
 .leave leave control zone via $uc($1).
 .enter enter control zone via $uc($1).
@@ -186,7 +186,7 @@
 .wake caution wake turbulence.
 .col approved to leave frequency.
 
---- VFR Deutsch ---
+;--- VFR Deutsch ---
 .dinfo Piste $uc($1), QNH $altim($2).
 .dleave verlassen Sie die Kontrollzone über $uc($1).
 .denter fliegen Sie in die Kontrollzone über $uc($1).
@@ -238,7 +238,7 @@
 .dxr überqueren Sie Piste $uc($1).
 .dcol Verlassen der Frequenz genehmigt.
 
---- HELP ---
+;--- HELP ---
 .helpnewbie You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or one of the Discord servers at https://community.vatsim.net/servers.
 .helptext You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback.
 .helppm Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers.
@@ -256,7 +256,7 @@
 .helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
 .helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH.
 
---- AUTOTEXT MESSAGES ---
+;--- AUTOTEXT MESSAGES ---
 .autoproceed Proceed direct $uc($1).
 .autoclearedils Cleared ILS approach runway $arrrwy.
 .autoclearedvisual Cleared visual approach runway $arrrwy.
