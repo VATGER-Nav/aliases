@@ -172,7 +172,7 @@
 .orbw orbit West of the field.
 .360l make a left 360.
 .360r make a right 360.
-.tc koin traffic circuit runway $uc($1).
+.tc join traffic circuit runway $uc($1).
 .tcr join right traffic circuit runway $uc($1).
 .tfc traffic information, $uc($1), report in sight.
 .tfc2 follow mentioned traffic, number 2.
