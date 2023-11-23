@@ -1,0 +1,79 @@
+;*** --- sector-specific contact me --- ***
+.cmbot .msg $aircraft Please contact me on 119.110.
+.cmdus .msg $aircraft Please contact me on 128.555.
+.cmbad .msg $aircraft Please contact me on 131.300.
+.cmlbu .msg $aircraft Please contact me on 127.050.
+.cmman .msg $aircraft Please contact me on 132.155.
+.cmnkrh .msg $aircraft Please contact me on 127.500.
+.cmnkrl .msg $aircraft Please contact me on 129.355.
+.cmged .msg $aircraft Please contact me on 124.430.
+.cmgin .msg $aircraft Please contact me on 124.730.
+.cmhef .msg $aircraft Please contact me on 127.275.
+.cmsig .msg $aircraft Please contact me on 124.900.
+.cmtau .msg $aircraft Please contact me on 127.625.
+.cmdkb .msg $aircraft Please contact me on 125.200.
+.cmhab .msg $aircraft Please contact me on 134.800.
+.cmkng .msg $aircraft Please contact me on 125.680.
+.cmktg .msg $aircraft Please contact me on 123.280.
+.cmpsa .msg $aircraft Please contact me on 125.405.
+.cmeif .msg $aircraft Please contact me on 125.600.
+.cmkir .msg $aircraft Please contact me on 133.460.
+.cmpfa .msg $aircraft Please contact me on 129.675.
+.cmrud .msg $aircraft Please contact me on 133.435.
+.cmhmm .msg $aircraft Please contact me on 129.300.
+.cmpadh .msg $aircraft Please contact me on 136.650.
+.cmpadl .msg $aircraft Please contact me on 125.225.
+.cmdka .msg $aircraft Please contact me on 135.350.
+.cmnor .msg $aircraft Please contact me on 127.365.
+.cmreu .msg $aircraft Please contact me on 119.200.
+.cmstg .msg $aircraft Please contact me on 125.050.
+
+;*** --- conditional contact me --- ***
+.cmdebhia .msg $aircraft Please contact me on 120.805 when passing MAMBU at FL130. After DEBHI follow DEBHI1A arrival. (Please do not reply to this message)
+.cmdebhib .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL160 descending to reach FL110 at SPESA. After DEBHI follow DEBHI1B arrival. (Please do not reply to this message)
+.cmdebhic .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL180 descending to reach FL110 at CHA. After DEBHI follow DEBHI1C arrival. (Please do not reply to this message)
+.cmdebhid .msg $aircraft Please contact me on 120.805 when passing SEVVE between FL160 and FL200 descending to reach FL130 at CHA. After DEBHI follow DEBHI1D arrival. (Please do not reply to this message)
+.cmempaxa .msg $aircraft Please contact me on 120.805 when passing ADNIS at FL100. After EMPAX follow EMPAX5A arrival. (Please do not reply to this message)
+.cmempaxb .msg $aircraft Please contact me on 125.355 when passing ADNIS at FL100. After EMPAX follow EMPAX5B arrival. (Please do not reply to this message)
+.cmempaxc .msg $aircraft Please contact me on 125.355 when passing ADNIS at FL100. After EMPAX follow EMPAX5C arrival. (Please do not reply to this message)
+.cmempaxd .msg $aircraft Please contact me on 120.805 when passing ADNIS at FL100. After EMPAX follow EMPAX5D arrival. (Please do not reply to this message)
+.cmimcoma .msg $aircraft Please contact me on 120.805 when passing RAMOB descending to reach FL110 at DF401. After IMCOM follow IMCOM1A arrival. (Please do not reply to this message)
+.cmimcomb .msg $aircraft Please contact me on 125.355 when passing RAMOB descending to reach FL110 at DF401. After IMCOM follow IMCOM1B arrival. (Please do not reply to this message)
+.cmimcomc .msg $aircraft Please contact me on 125.355 when passing RAMOB at FL130. After IMCOM1C follow $star arrival. (Please do not reply to this message)
+.cmimcomd .msg $aircraft Please contact me on 120.805 when passing RAMOB at FL110. After IMCOM1D follow $star arrival. (Please do not reply to this message)
+.cmkeraxa .msg $aircraft Please contact me on 120.805 when passing KERAX at FL110. After KERAX follow KERAX4A arrival. (Please do not reply to this message)
+.cmkeraxb .msg $aircraft Please contact me on 125.355 when passing EBIPA at FL100. After KERAX follow KERAX4B arrival. (Please do not reply to this message)
+.cmkeraxc .msg $aircraft Please contact me on 125.355 when passing EBIPA at FL120. After KERAX follow KERAX4C arrival. (Please do not reply to this message)
+.cmkeraxd .msg $aircraft Please contact me on 120.805 when passing GEDEH at FL130. After KERAX follow KERAX4D arrival. (Please do not reply to this message)
+.cmkeraxg .msg $aircraft Please contact me on 120.805 when passing KERAX at FL110. After KERAX follow KERAX3G arrival. (Please do not reply to this message)
+.cmkeraxr .msg $aircraft Please contact me on 120.805 when passing GEDEH at FL110. After KERAX follow KERAX4R arrival. (Please do not reply to this message)
+.cmpetixa .msg $aircraft Please contact me on 120.805 when passing INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4A arrival. (Please do not reply to this message)
+.cmpetixb .msg $aircraft Please contact me on 125.355 when passing INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4B arrival. (Please do not reply to this message)
+.cmpetixc .msg $aircraft Please contact me on 125.355 when passing INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4C arrival. (Please do not reply to this message)
+.cmpetixd .msg $aircraft Please contact me on 120.805 when passing INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4D arrival. (Please do not reply to this message)
+.cmrasvoa .msg $aircraft Please contact me on 120.805 when passing RAMOB descending to reach FL110 at DF401. After RASVO follow RASVO1A arrival. (Please do not reply to this message)
+.cmrasvob .msg $aircraft Please contact me on 125.355 when passing RAMOB descending to reach FL110 at DF401. After RASVO follow RASVO1B arrival. (Please do not reply to this message)
+.cmrasvoc .msg $aircraft Please contact me on 125.355 when passing RAMOB at FL130. After RASVO follow RASVO1C arrival. (Please do not reply to this message)
+.cmrasvod .msg $aircraft Please contact me on 120.805 when passing RAMOB at FL110. After RASVO follow RASVO1D arrival. (Please do not reply to this message)
+.cmrolisa .msg $aircraft Please contact me on 120.805 when passing ETARU at FL100. After ROLIS follow ROLIS4A arrival. (Please do not reply to this message)
+.cmrolisb .msg $aircraft Please contact me on 125.355 when passing OSPUL at FL120. After ROLIS follow ROLIS4B arrival. (Please do not reply to this message)
+.cmrolisc .msg $aircraft Please contact me on 125.355 when passing OSPUL at FL120. After ROLIS follow ROLIS4C arrival. (Please do not reply to this message)
+.cmrolisd .msg $aircraft Please contact me on 120.805 when passing ETARU at FL100. After ROLIS follow ROLIS4D arrival. (Please do not reply to this message)
+.cmrolisg .msg $aircraft Please contact me on 120.805 when passing ETARU at FL100. After ROLIS follow ROLIS4G arrival. (Please do not reply to this message)
+.cmrolisr .msg $aircraft Please contact me on 120.805 when passing ROLIS at FL100. After ROLIS follow ROLIS3R arrival. (Please do not reply to this message)
+.cmspesaa .msg $aircraft Please contact me on 120.805 10 NM prior SPESA descending to reach FL110 at SPESA. After SPESA follow SPESA4A arrival. (Please do not reply to this message)
+.cmspesab .msg $aircraft Please contact me on 125.355 10 NM prior SPESA descending to reach FL110 at SPESA. After SPESA follow SPESA4B arrival. (Please do not reply to this message)
+.cmspesac .msg $aircraft Please contact me on 125.355 10 NM prior SPESA descending to reach FL110 at CHA. After SPESA follow SPESA4C arrival. (Please do not reply to this message)
+.cmspesad .msg $aircraft Please contact me on 120.805 10 NM prior SPESA descending to reach FL110 at CHA. After SPESA follow SPESA4D arrival. (Please do not reply to this message)
+.cmspesag .msg $aircraft Please contact me on 125.355 10 NM prior SPESA descending to reach FL110 at SPESA. After SPESA follow SPESA2G arrival. (Please do not reply to this message)
+.cmspesar .msg $aircraft Please contact me on 125.355 10 NM prior SPESA descending to reach FL110 at SPESA. After SPESA follow SPESA4R arrival. (Please do not reply to this message)
+.cmtanjoa .msg $aircraft Please contact me on 120.805 when passing ETARU at FL100. After TANJO follow TANJO1A arrival. (Please do not reply to this message)
+.cmtanjob .msg $aircraft Please contact me on 125.355 when passing OSPUL at FL120. After TANJO follow TANJO1B arrival. (Please do not reply to this message)
+.cmtanjoc .msg $aircraft Please contact me on 125.355 when passing OSPUL at FL120. After TANJO follow TANJO1C arrival. (Please do not reply to this message)
+.cmtanjod .msg $aircraft Please contact me on 120.805 when passing ETARU at FL100. After TANJO follow TANJO1D arrival. (Please do not reply to this message)
+.cmunokog .msg $aircraft Please contact me on 120.805 when passing RAMOB at FL110. After UNOKO follow UNOKO4G arrival. (Please do not reply to this message)
+.cmunokor .msg $aircraft Please contact me on 120.805 when passing RAMOB at FL110. After UNOKO follow UNOKO4R arrival. (Please do not reply to this message)
+.cmpitesa .msg $aircraft Please contact me on 120.805 when passing RAMOB descending to reach FL110 at DF401. At RAMOB join RASVO1A arrival. (Please do not reply to this message)
+.cmpitesb .msg $aircraft Please contact me on 125.355 when passing RAMOB descending to reach FL110 at DF401. At RAMOB join RASVO1B arrival. (Please do not reply to this message)
+.cmpitesc .msg $aircraft Please contact me on 125.355 when passing RAMOB at FL130. At RAMOB join RASVO1C arrival. (Please do not reply to this message)
+.cmpitesd .msg $aircraft Please contact me on 120.805 when passing RAMOB at FL110. At RAMOB join RASVO1D arrival. (Please do not reply to this message)
