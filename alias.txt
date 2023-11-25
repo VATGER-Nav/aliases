@@ -1,273 +1,273 @@
 ;--- GENERAL ---
-.r report $1.
-.rpos report your position.
-.co contact $radioname($1), $freq($1).
-.costby standby for $radioname($1), $freq($1).
-.uni monitor Unicom, 122.800.
-.nma you are not in my airspace, switch back to Unicom, 122.800.
-.wf wrong frequency, check again with the previous controller.
-.stby standby.
-.rgr roger.
-.close all stations, I'm closing, monitor Unicom, 122.800.
-.dis disregard.
-.una unable.
-.rbc readback correct.
-.q QNH $altim($1).
-.wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
-.wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
-.wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
+.r report $1
+.rpos report your position
+.co contact $radioname($1), $freq($1)
+.costby standby for $radioname($1), $freq($1)
+.uni monitor Unicom, 122.800
+.nma you are not in my airspace, switch back to Unicom, 122.800
+.wf wrong frequency, check again with the previous controller
+.stby standby
+.rgr roger
+.close all stations, I'm closing, monitor Unicom, 122.800
+.dis disregard
+.una unable
+.rbc readback correct
+.q QNH $altim($1)
+.wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8)
+.wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3)
+.wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6)
 
 ;--- DELIVERY ---
-.nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens.
-.rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
+.nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens
+.rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.tobt please set your TOBT at https://vacdm.vatger.de.
-.tsat You can find your current TSAT at https://vacdm.vatger.de.
-.clr cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
-.clrs startup approved. Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
-.clrv cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
-.clrvs startup approved. Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
-.clrvec cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk.
-.clrvis cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk.
-.atis check information $uc($1).
-.rbr readback correct, report ready.
-.su start-up approved.
-.suco start-up approved. Hold position. Contact $radioname($1) on $freq($1).
+.tobt please set your TOBT at https://vacdm.vatger.de
+.tsat You can find your current TSAT at https://vacdm.vatger.de
+.clr cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
+.clrs startup approved. Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
+.clrv cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk
+.clrvs startup approved. Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk
+.clrvec cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk
+.clrvis cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk
+.atis check information $uc($1)
+.rbr readback correct, report ready
+.su start-up approved
+.suco start-up approved. Hold position. Contact $radioname($1) on $freq($1)
 
 ;--- GROUND ---
-.p pushback approved.
-.pn pushback approved, face North.
-.pe pushback approved, face East.
-.ps pushback approved, face South.
-.pw pushback approved, face West.
-.hp hold position.
-.t taxi to holding point runway $deprwy via $uc($1).
-.ts taxi to stand $uc($1) via $uc($2).
-.tgat taxi to the GAT via $uc($1).
-.th taxi via $uc($1), hold short of $uc($2).
-.te taxi to entry $uc($1) via $uc($2).
-.ct continue taxi.
-.hs hold short of $uc($1).
-.gw give way to $1.
-.xr cross runway $uc($1).
+.p pushback approved
+.pn pushback approved, face North
+.pe pushback approved, face East
+.ps pushback approved, face South
+.pw pushback approved, face West
+.hp hold position
+.t taxi to holding point runway $deprwy via $uc($1)
+.ts taxi to stand $uc($1) via $uc($2)
+.tgat taxi to the GAT via $uc($1)
+.th taxi via $uc($1), hold short of $uc($2)
+.te taxi to entry $uc($1) via $uc($2)
+.ct continue taxi
+.hs hold short of $uc($1)
+.gw give way to $1
+.xr cross runway $uc($1)
 
 ;--- TOWER ---
-.cft wind $wind, runway $deprwy, cleared for take-off.
-.cfit wind $wind, runway $deprwy, cleared for immediate take-off.
-.ctl wind $wind, runway $arrrwy, cleared to land.
-.ctll wind $wind, runway $arrrwy, cleared to land, vacate left.
-.ctlr wind $wind, runway $arrrwy, cleared to land, vacate right.
-.ctg wind $wind, runway $arrrwy, cleared touch and go.
-.cla wind $wind, runway $arrrwy, cleared low approach.
-.rdy report ready for departure.
+.cft wind $wind, runway $deprwy, cleared for take-off
+.cfit wind $wind, runway $deprwy, cleared for immediate take-off
+.ctl wind $wind, runway $arrrwy, cleared to land
+.ctll wind $wind, runway $arrrwy, cleared to land, vacate left
+.ctlr wind $wind, runway $arrrwy, cleared to land, vacate right
+.ctg wind $wind, runway $arrrwy, cleared touch and go
+.cla wind $wind, runway $arrrwy, cleared low approach
+.rdy report ready for departure
 .rdyimm are you ready for immediate departure?
-.stop stop immediately. Hold position, cancel take-off.
-.ga go around.
-.map follow the published missed approach procedure.
-.lu line up runway $deprwy.
-.ludep behind next departing $1, line up runway $deprwy, behind.
-.luarr behind next arriving $1, line up runway $deprwy, behind.
-.late expect late landing clearance.
+.stop stop immediately. Hold position, cancel take-off
+.ga go around
+.map follow the published missed approach procedure
+.lu line up runway $deprwy
+.ludep behind next departing $1, line up runway $deprwy, behind
+.luarr behind next arriving $1, line up runway $deprwy, behind
+.late expect late landing clearance
 
 ;--- RADAR ---
-.sq squawk $squawk.
-.sqi squawk Ident.
-.sqc squawk Charlie.
-.sqstby squawk Standby.
-.sqv squawk VFR.
-.id identified.
-.c climb to flight level $temp.
-.ca climb to altitude $temp.
-.cvs climb via SID to flight level $temp.
-.d descend to flight level $temp.
-.da descend to altitude $temp.
-.daq descend to altitude $temp, QNH $altim($arr).
-.dvs descend via STAR to flight level $temp.
-.dvsa descend via STAR to altitude $temp, QNH $altim($arr).
-.dtr when ready, descend to reach flight level $temp at $uc($2).
-.roc climb at $1 ft per minute.
-.rocg climb at $1 ft per minute or greater.
-.rocl climb at $1 ft per minute or less.
-.rod descend at $1 ft per minute.
-.rodg descend at $1 ft per minute or greater.
-.rodl descend at $1 ft per minute or less.
-.hold hold over $uc($1) as published.
-.holdman hold over $uc($1), inbound track $2 degrees, $3 hand turns, $4 minute legs.
-.h fly heading $1.
-.hl turn left heading $1.
-.hr turn right heading $1.
-.hbl turn left $1 degrees.
-.hbr turn right $1 degrees.
-.hc continue present heading.
-.pd proceed direct $uc($1).
-.star cleared $star arrival.
-.trans cleared $star transition.
-.ri report speed.
-.rm report mach number.
-.ra report altitude.
-.rf report flight level.
-.rh report heading.
-.ei expect ILS approach runway $arrrwy.
-.eix expect ILS X approach runway $arrrwy.
-.eiy expect ILS Y approach runway $arrrwy.
-.eiz expect ILS Z approach runway $arrrwy.
-.er expect RNP approach runway $arrrwy.
-.erx expect RNP X approach runway $arrrwy.
-.ery expect RNP Y approach runway $arrrwy.
-.erz expect RNP Z approach runway $arrrwy.
-.ev expect VOR approach runway $arrrwy.
-.en expect NDB approach runway $arrrwy.
-.eg expect GLS approach runway $arrrwy.
-.egy expect GLS Y approach runway $arrrwy.
-.egz expect GLS Z approach runway $arrrwy.
-.el expect LOC approach runway $arrrwy.
-.ely expect LOC Y approach runway $arrrwy.
-.elz expect LOC Z approach runway $arrrwy.
-.evis expect visual approach runway $arrrwy.
-.ci cleared ILS approach runway $arrrwy.
-.cix cleared ILS X approach runway $arrrwy.
-.ciy cleared ILS Y approach runway $arrrwy.
-.ciz cleared ILS Z approach runway $arrrwy.
-.cr cleared RNP approach runway $arrrwy.
-.crx cleared RNP X approach runway $arrrwy.
-.cry cleared RNP Y approach runway $arrrwy.
-.crz cleared RNP Z approach runway $arrrwy.
-.cv cleared VOR approach runway $arrrwy.
-.cn cleared NDB approach runway $arrrwy.
-.cg cleared GLS approach runway $arrrwy.
-.cgy cleared GLS Y approach runway $arrrwy.
-.cgz cleared GLS Z approach runway $arrrwy.
-.cl cleared localizer approach runway $arrrwy.
-.cly cleared localizer Y approach runway $arrrwy.
-.clz cleared localizer Z approach runway $arrrwy.
-.cvis cleared visual approach runway $arrrwy.
-.spd fly speed $1 knots.
-.spdg fly speed $1 knots or greater.
-.spdl fly speed $1 knots or less.
-.spdu fly speed $1 knots until $2 miles final.
-.spdug fly speed $1 knots or greater until $uc($2) miles final.
-.spdul fly speed $1 knots or less until $uc($2) miles final.
-.spdm maintain Mach .$1.
-.spdmg maintain Mach .$1 or greater.
-.spdml maintain Mach .$1 or less.
-.spdma reduce to minimum approach speed.
-.spdmc reduce to minimum clean speed.
-.spdn resume normal speed.
-.spdh high speed approved.
+.sq squawk $squawk
+.sqi squawk Ident
+.sqc squawk Charlie
+.sqstby squawk Standby
+.sqv squawk VFR
+.id identified
+.c climb to flight level $temp
+.ca climb to altitude $temp
+.cvs climb via SID to flight level $temp
+.d descend to flight level $temp
+.da descend to altitude $temp
+.daq descend to altitude $temp, QNH $altim($arr)
+.dvs descend via STAR to flight level $temp
+.dvsa descend via STAR to altitude $temp, QNH $altim($arr)
+.dtr when ready, descend to reach flight level $temp at $uc($2)
+.roc climb at $1 ft per minute
+.rocg climb at $1 ft per minute or greater
+.rocl climb at $1 ft per minute or less
+.rod descend at $1 ft per minute
+.rodg descend at $1 ft per minute or greater
+.rodl descend at $1 ft per minute or less
+.hold hold over $uc($1) as published
+.holdman hold over $uc($1), inbound track $2 degrees, $3 hand turns, $4 minute legs
+.h fly heading $1
+.hl turn left heading $1
+.hr turn right heading $1
+.hbl turn left $1 degrees
+.hbr turn right $1 degrees
+.hc continue present heading
+.pd proceed direct $uc($1)
+.star cleared $star arrival
+.trans cleared $star transition
+.ri report speed
+.rm report mach number
+.ra report altitude
+.rf report flight level
+.rh report heading
+.ei expect ILS approach runway $arrrwy
+.eix expect ILS X approach runway $arrrwy
+.eiy expect ILS Y approach runway $arrrwy
+.eiz expect ILS Z approach runway $arrrwy
+.er expect RNP approach runway $arrrwy
+.erx expect RNP X approach runway $arrrwy
+.ery expect RNP Y approach runway $arrrwy
+.erz expect RNP Z approach runway $arrrwy
+.ev expect VOR approach runway $arrrwy
+.en expect NDB approach runway $arrrwy
+.eg expect GLS approach runway $arrrwy
+.egy expect GLS Y approach runway $arrrwy
+.egz expect GLS Z approach runway $arrrwy
+.el expect LOC approach runway $arrrwy
+.ely expect LOC Y approach runway $arrrwy
+.elz expect LOC Z approach runway $arrrwy
+.evis expect visual approach runway $arrrwy
+.ci cleared ILS approach runway $arrrwy
+.cix cleared ILS X approach runway $arrrwy
+.ciy cleared ILS Y approach runway $arrrwy
+.ciz cleared ILS Z approach runway $arrrwy
+.cr cleared RNP approach runway $arrrwy
+.crx cleared RNP X approach runway $arrrwy
+.cry cleared RNP Y approach runway $arrrwy
+.crz cleared RNP Z approach runway $arrrwy
+.cv cleared VOR approach runway $arrrwy
+.cn cleared NDB approach runway $arrrwy
+.cg cleared GLS approach runway $arrrwy
+.cgy cleared GLS Y approach runway $arrrwy
+.cgz cleared GLS Z approach runway $arrrwy
+.cl cleared localizer approach runway $arrrwy
+.cly cleared localizer Y approach runway $arrrwy
+.clz cleared localizer Z approach runway $arrrwy
+.cvis cleared visual approach runway $arrrwy
+.spd fly speed $1 knots
+.spdg fly speed $1 knots or greater
+.spdl fly speed $1 knots or less
+.spdu fly speed $1 knots until $2 miles final
+.spdug fly speed $1 knots or greater until $uc($2) miles final
+.spdul fly speed $1 knots or less until $uc($2) miles final
+.spdm maintain Mach .$1
+.spdmg maintain Mach .$1 or greater
+.spdml maintain Mach .$1 or less
+.spdma reduce to minimum approach speed
+.spdmc reduce to minimum clean speed
+.spdn resume normal speed
+.spdh high speed approved
 
 ;--- VFR English---
-.info runway $uc($1), QNH $altim($2).
-.leave leave control zone via $uc($1).
-.enter enter control zone via $uc($1).
-.noctr stay outside the CTR.
-.nod stay outside airspace class D.
-.noc stay outside airspace class C.
-.rt right turn approved.
-.orbr orbit right.
-.orbl orbit left.
-.orbo hold visual over $uc($1).
-.orbn orbit North of the field.
-.orbe orbit East of the field.
-.orbs orbit South of the field.
-.orbw orbit West of the field.
-.360l make a left 360.
-.360r make a right 360.
-.tc join traffic circuit runway $uc($1).
-.tcr join right traffic circuit runway $uc($1).
-.tfc traffic information, $uc($1), report in sight.
-.tfc2 follow mentioned traffic, number 2.
-.down join downwind runway $uc($1).
-.downr join right downwind runway $uc($1).
-.downex extend downwind, standby for base.
-.downrex extend right downwind, standby for base.
-.base join base runway $uc($1).
-.baser join right base runway $uc($1).
-.fin join final runway $uc($1).
-.wake caution wake turbulence.
-.col approved to leave frequency.
+.info runway $uc($1), QNH $altim($2)
+.leave leave control zone via $uc($1)
+.enter enter control zone via $uc($1)
+.noctr stay outside the CTR
+.nod stay outside airspace class D
+.noc stay outside airspace class C
+.rt right turn approved
+.orbr orbit right
+.orbl orbit left
+.orbo hold visual over $uc($1)
+.orbn orbit North of the field
+.orbe orbit East of the field
+.orbs orbit South of the field
+.orbw orbit West of the field
+.360l make a left 360
+.360r make a right 360
+.tc join traffic circuit runway $uc($1)
+.tcr join right traffic circuit runway $uc($1)
+.tfc traffic information, $uc($1), report in sight
+.tfc2 follow mentioned traffic, number 2
+.down join downwind runway $uc($1)
+.downr join right downwind runway $uc($1)
+.downex extend downwind, standby for base
+.downrex extend right downwind, standby for base
+.base join base runway $uc($1)
+.baser join right base runway $uc($1)
+.fin join final runway $uc($1)
+.wake caution wake turbulence
+.col approved to leave frequency
 
 ;--- VFR Deutsch ---
-.dinfo Piste $uc($1), QNH $altim($2).
-.dleave verlassen Sie die Kontrollzone über $uc($1).
-.denter fliegen Sie in die Kontrollzone über $uc($1).
-.dnoctr bleiben Sie außerhalb der Kontrollzone.
-.dnod bleiben Sie außerhalb des Luftraum D.
-.dnoc bleiben Sie außerhalb des Luftraum C.
-.dr melden Sie $1.
-.drt Rechtskurve genehmigt.
-.dorbr kreisen Sie rechts.
-.dorbl kreisen Sie links.
-.dorbo kreisen Sie über $1.
-.dorbn kreisen Sie nördlich des Platzes.
-.dorbe kreisen Sie östlich des Platzes.
-.dorbs kreisen Sie südlich des Platzes.
-.dorbw kreisen Sie westlich des Platzes.
-.dtc fliegen Sie in die Platzrunde Piste $arrrwy.
-.dtcr fliegen Sie in die rechte Platzrunde Piste $arrrwy.
-.dtfc Verkehrsinformation, $1, melden Sie in Sicht.
-.dtfc2 Nummer 2, folgen Sie genanntem Verkehr.
-.ddown fliegen Sie in den Gegenanflug Piste $arrrwy.
-.ddownr fliegen Sie in den rechten Gegenanflug Piste $arrrwy.
-.ddownex verlängern Sie Gegenanflug, warten Sie für Queranflug.
-.ddownrex verlängern Sie rechten Gegenanflug, warten Sie für Queranflug.
-.dbase fliegen Sie in den Queranflug Piste $arrrwy.
-.dbaser fliegen Sie in den rechten Queranflug Piste $arrrwy.
-.dfin fliegen Sie in den Endanflug Piste $arrrwy.
-.dwake Vorsicht Wirbelschleppen.
-.dcft Wind $wind, Piste $deprwy, Start frei.
-.dctl Wind $wind, Piste $arrrwy, Landung frei.
-.dctll Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach links.
-.dctlr Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach rechts.
-.dctg Wind $wind, Piste $arrrwy, frei zum Aufsetzen und Durchstarten.
-.dcla Wind $wind, Piste $arrrwy, frei zum Tiefanflug.
-.drdy melden Sie abflugbereit.
-.dstop halten Sie Position, Startfreigabe aufgehoben, ich wiederhole, Startfreigabe aufgehoben.
-.dga starten Sie durch.
-.dlu rollen Sie zum Abflugpunkt Piste $deprwy.
-.dludep hinter nächster abfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter.
-.dluarr hinter nächster anfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter.
-.dhp halten Sie Position.
-.dt rollen Sie zum Rollhalt Piste $deprwy über $uc($1).
-.dts rollen Sie zu Parkposition $uc($1) über $uc($2).
-.dtgat rollen Sie zum Abstellplatz der Allgemeinen Luftfahrt über $uc($1).
-.dth rollen Sie über $uc($1), halten Sie vor $uc($2).
-.dct rollen Sie weiter.
-.dte rollen Sie zu Entry $uc($1) über $uc($2).
-.dhs halten Sie vor $uc($1).
-.dgw gewähren Sie $1 Vorfahrt.
-.dxr überqueren Sie Piste $uc($1).
-.dcol Verlassen der Frequenz genehmigt.
+.dinfo Piste $uc($1), QNH $altim($2)
+.dleave verlassen Sie die Kontrollzone über $uc($1)
+.denter fliegen Sie in die Kontrollzone über $uc($1)
+.dnoctr bleiben Sie außerhalb der Kontrollzone
+.dnod bleiben Sie außerhalb des Luftraum D
+.dnoc bleiben Sie außerhalb des Luftraum C
+.dr melden Sie $1
+.drt Rechtskurve genehmigt
+.dorbr kreisen Sie rechts
+.dorbl kreisen Sie links
+.dorbo kreisen Sie über $1
+.dorbn kreisen Sie nördlich des Platzes
+.dorbe kreisen Sie östlich des Platzes
+.dorbs kreisen Sie südlich des Platzes
+.dorbw kreisen Sie westlich des Platzes
+.dtc fliegen Sie in die Platzrunde Piste $arrrwy
+.dtcr fliegen Sie in die rechte Platzrunde Piste $arrrwy
+.dtfc Verkehrsinformation, $1, melden Sie in Sicht
+.dtfc2 Nummer 2, folgen Sie genanntem Verkehr
+.ddown fliegen Sie in den Gegenanflug Piste $arrrwy
+.ddownr fliegen Sie in den rechten Gegenanflug Piste $arrrwy
+.ddownex verlängern Sie Gegenanflug, warten Sie für Queranflug
+.ddownrex verlängern Sie rechten Gegenanflug, warten Sie für Queranflug
+.dbase fliegen Sie in den Queranflug Piste $arrrwy
+.dbaser fliegen Sie in den rechten Queranflug Piste $arrrwy
+.dfin fliegen Sie in den Endanflug Piste $arrrwy
+.dwake Vorsicht Wirbelschleppen
+.dcft Wind $wind, Piste $deprwy, Start frei
+.dctl Wind $wind, Piste $arrrwy, Landung frei
+.dctll Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach links
+.dctlr Wind $wind, Piste $arrrwy, Landung frei, verlassen Sie die Piste nach rechts
+.dctg Wind $wind, Piste $arrrwy, frei zum Aufsetzen und Durchstarten
+.dcla Wind $wind, Piste $arrrwy, frei zum Tiefanflug
+.drdy melden Sie abflugbereit
+.dstop halten Sie Position, Startfreigabe aufgehoben, ich wiederhole, Startfreigabe aufgehoben
+.dga starten Sie durch
+.dlu rollen Sie zum Abflugpunkt Piste $deprwy
+.dludep hinter nächster abfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter
+.dluarr hinter nächster anfliegenden $uc($1), rollen Sie zum Abflugpunkt Piste $deprwy, dahinter
+.dhp halten Sie Position
+.dt rollen Sie zum Rollhalt Piste $deprwy über $uc($1)
+.dts rollen Sie zu Parkposition $uc($1) über $uc($2)
+.dtgat rollen Sie zum Abstellplatz der Allgemeinen Luftfahrt über $uc($1)
+.dth rollen Sie über $uc($1), halten Sie vor $uc($2)
+.dct rollen Sie weiter
+.dte rollen Sie zu Entry $uc($1) über $uc($2)
+.dhs halten Sie vor $uc($1)
+.dgw gewähren Sie $1 Vorfahrt
+.dxr überqueren Sie Piste $uc($1)
+.dcol Verlassen der Frequenz genehmigt
 
 ;--- HELP ---
-.helpnewbie You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or one of the Discord servers at https://community.vatsim.net/servers.
-.helptext You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback.
-.helppm Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers.
-.helpcharts You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/.
-.helpsector You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/.
-.helpgg You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg.
-.helpmm You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm.
-.helpww You can find pilot briefings for airports in FIR Bremen at https://knowledgebase.vatsim-germany.org/books/airports-bremen-fir-edww.
-.helpxx You can find pilot briefings for uncontrolled airfields throughout Germany at https://knowledgebase.vatsim-germany.org/books/airfields-germany.
-.helpkb You can find a lot of helpful information in the VATSIM Germany Knowledgebase (https://kb.vatger.de).
-.helpiata You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign.
-.helpequip You have not filed an equipment code (or have filed one that is most likely incorrect). Please keep in mind that filing a correct equipment code helps controllers to quickly see what type of procedures you are able to fly etc. You can learn more about equipment codes at https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf.
-.help833 You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 <frequency>" in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833.
-.helpxc Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
-.helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
-.helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH.
+.helpnewbie You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or one of the Discord servers at https://community.vatsim.net/servers
+.helptext You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback
+.helppm Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers
+.helpcharts You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/
+.helpsector You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/
+.helpgg You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg
+.helpmm You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm
+.helpww You can find pilot briefings for airports in FIR Bremen at https://knowledgebase.vatsim-germany.org/books/airports-bremen-fir-edww
+.helpxx You can find pilot briefings for uncontrolled airfields throughout Germany at https://knowledgebase.vatsim-germany.org/books/airfields-germany
+.helpkb You can find a lot of helpful information in the VATSIM Germany Knowledgebase (https://kb.vatger.de)
+.helpiata You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign
+.helpequip You have not filed an equipment code (or have filed one that is most likely incorrect). Please keep in mind that filing a correct equipment code helps controllers to quickly see what type of procedures you are able to fly etc. You can learn more about equipment codes at https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf
+.help833 You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 <frequency>" in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833
+.helpxc Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff
+.helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide
+.helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH
 
 ;--- AUTOTEXT MESSAGES ---
-.autoproceed Proceed direct $uc($1).
-.autoclearedils Cleared ILS approach runway $arrrwy.
-.autoclearedvisual Cleared visual approach runway $arrrwy.
-.autoclimblevel Climb to flight level $temp.
-.autoclimbaltitude Climb to altitude $temp, QNH $altim($dep).
-.autodescendlevel Descend to flight level $temp.
-.autodescendaltitude Descend to altitude $temp, QNH $altim($arr).
-.autospeed Fly speed $uc($1) knots.
-.automach Fly speed Mach $uc($1).
-.autonospeed Resume normal speed.
-.autoturnleft Turn left heading $uc($1).
-.autoturnright Turn right heading $uc($1).
-.autocontact Contact $radioname($1), $freq($1).
-.autosquawk Squawk $squawk.
+.autoproceed Proceed direct $uc($1)
+.autoclearedils Cleared ILS approach runway $arrrwy
+.autoclearedvisual Cleared visual approach runway $arrrwy
+.autoclimblevel Climb to flight level $temp
+.autoclimbaltitude Climb to altitude $temp, QNH $altim($dep)
+.autodescendlevel Descend to flight level $temp
+.autodescendaltitude Descend to altitude $temp, QNH $altim($arr)
+.autospeed Fly speed $uc($1) knots
+.automach Fly speed Mach $uc($1)
+.autonospeed Resume normal speed
+.autoturnleft Turn left heading $uc($1)
+.autoturnright Turn right heading $uc($1)
+.autocontact Contact $radioname($1), $freq($1)
+.autosquawk Squawk $squawk
