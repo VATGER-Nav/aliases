@@ -1,4 +1,4 @@
---- GENERAL ---
+;--- GENERAL ---
 .r report $1
 .rpos report your position
 .co contact $radioname($1), $freq($1)
@@ -17,11 +17,11 @@
 .wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3)
 .wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6)
 
---- DELIVERY ---
+;--- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.tobt Set your TOBT at https://vacdm.vatger.de
+.tobt please set your TOBT at https://vacdm.vatger.de
 .tsat You can find your current TSAT at https://vacdm.vatger.de
 .clr cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
 .clrs startup approved, cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
@@ -31,15 +31,15 @@
 .clrvis cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk
 .atis check information $uc($1)
 .rbr readback correct, report ready
-.su start-up approved
-.suco start-up approved, hold position, contact $radioname($1) on $freq($1)
+.su startup approved
+.suco startup approved, hold position, contact $radioname($1) on $freq($1)
 
---- GROUND ---
+;--- GROUND ---
 .p pushback approved
-.pn pushback approved, face north
-.pe pushback approved, face east
-.ps pushback approved, face south
-.pw pushback approved, face west
+.pn pushback approved, face North
+.pe pushback approved, face East
+.ps pushback approved, face South
+.pw pushback approved, face West
 .hp hold position
 .t taxi to holding point runway $deprwy via $uc($1)
 .ts taxi to stand $uc($1) via $uc($2)
@@ -51,7 +51,7 @@
 .gw give way to $1
 .xr cross runway $uc($1)
 
---- TOWER ---
+;--- TOWER ---
 .cft wind $wind, runway $deprwy, cleared for take-off
 .cfit wind $wind, runway $deprwy, cleared for immediate take-off
 .ctl wind $wind, runway $arrrwy, cleared to land
@@ -69,7 +69,7 @@
 .luarr behind next arriving $1, line up runway $deprwy, behind
 .late expect late landing clearance
 
---- RADAR ---
+;--- RADAR ---
 .sq squawk $squawk
 .sqi squawk Ident
 .sqc squawk Charlie
@@ -155,7 +155,7 @@
 .spdn resume normal speed
 .spdh high speed approved
 
---- VFR English---
+;--- VFR English---
 .info runway $uc($1), QNH $altim($2)
 .leave leave control zone via $uc($1)
 .enter enter control zone via $uc($1)
@@ -186,7 +186,7 @@
 .wake caution wake turbulence
 .col approved to leave frequency
 
---- VFR Deutsch ---
+;--- VFR Deutsch ---
 .dinfo Piste $uc($1), QNH $altim($2)
 .dleave verlassen Sie die Kontrollzone über $uc($1)
 .denter fliegen Sie in die Kontrollzone über $uc($1)
@@ -238,47 +238,36 @@
 .dxr überqueren Sie Piste $uc($1)
 .dcol verlassen der Frequenz genehmigt
 
---- HELP ---
-.helpnewbie You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or one of the Discord servers at https://community.vatsim.net/servers.
-.helptext You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback.
-.helppm Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers.
-.helpcharts You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/.
-.helpsector You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/.
-.helpgg You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg.
-.helpmm You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm.
-.helpww You can find pilot briefings for airports in FIR Bremen at https://knowledgebase.vatsim-germany.org/books/airports-bremen-fir-edww.
-.helpxx You can find pilot briefings for uncontrolled airfields throughout Germany at https://knowledgebase.vatsim-germany.org/books/airfields-germany.
-.helpkb You can find a lot of helpful information in the VATSIM Germany Knowledgebase (https://kb.vatger.de).
-.helpiata You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign.
-.helpequip You have not filed an equipment code (or have filed one that is most likely incorrect). Please keep in mind that filing a correct equipment code helps controllers to quickly see what type of procedures you are able to fly etc. You can learn more about equipment codes at https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf.
-.help833 You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 <frequency>" in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833.
-.helpxc Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
-.helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide.
-.helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH.
+;--- HELP ---
+.helpnewbie You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or one of the Discord servers at https://community.vatsim.net/servers
+.helptext You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback
+.helppm Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers
+.helpcharts You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/
+.helpsector You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/
+.helpgg You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg
+.helpmm You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm
+.helpww You can find pilot briefings for airports in FIR Bremen at https://knowledgebase.vatsim-germany.org/books/airports-bremen-fir-edww
+.helpxx You can find pilot briefings for uncontrolled airfields throughout Germany at https://knowledgebase.vatsim-germany.org/books/airfields-germany
+.helpkb You can find a lot of helpful information in the VATSIM Germany Knowledgebase (https://kb.vatger.de)
+.helpiata You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign
+.helpequip You have not filed an equipment code (or have filed one that is most likely incorrect). Please keep in mind that filing a correct equipment code helps controllers to quickly see what type of procedures you are able to fly etc. You can learn more about equipment codes at https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf
+.help833 You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 <frequency>" in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833
+.helpxc Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff
+.helpacdm If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide
+.helpfl Hey I corrected your readback to FL0X0, as you said X000ft. Therefore an explanation: FL0X0 and X000ft are not the same! But where is the difference? If you are cleared to climb FL0X0, you should change your altimeter setting to STD during climb (in Germany when passing 5000ft) and level off at FL0X0 on QNH STD. If you are cleared to X000ft, you should climb to X000ft with local QNH. Summary: FL = QNH STD and ALT xxxx ft = local QNH
 
---- WARNINGS ---
-.warncoc If you are unable to comply with ATC instructions (as required by Code of Conduct section B8), we strongly recommend you disconnect from the network and acquire the skills necessary for flying on VATSIM in order to keep it fun for everyone, including controllers and other pilots. Otherwise, ATC will need to involve a supervisor.
-.warnhs You have not followed a hold short instruction. A hold short instruction requires you to hold before the taxiway/stopbar/runway hold short line you are instructed to hold short of so that other aircraft can still maneouver on that taxiway/runway.
-.warnpush You are pushing back without clearance. STOP YOUR PUSHBACK IMMEDIATELY and RETURN TO YOUR PARKING POSITION. In Germany, pushback always requires an explicit clearance as all ramp areas are controlled. Note that Delivery does not issue pushback clearances and the phrase "startup approved" does not include clearance for pushback.
-.warnrdy It appears you have requested a clearance without being ready to comply with it. Please only request startup, pushback, and taxi once you are ready to comply with the appropriate clearance within the next minute. If a problem arises after you have received your clearance, notify ATC immediately so they can find a different solution.
-.warnvac You have not correctly vacated the runway. Your aircraft needs to be past the appropriate runway hold short line in its entirety before you are considered off the runway. Do not stop moving until this is ensured to avoid causing go arounds for following traffic and/or delays for pending departures.
-.warnemer CANCEL YOUR EMERGENCY IMMEDIATELY or disconnect from the network (as required by Code of Conduct section B6).
-.warnvsoa You appear to be taking part in a VSOA-restricted mission. If you are not part of an VSOA, we recommend you stop this activity immediately; otherwise, a supervisor might remove you from the network. You can find more information on the VATSIM Special Operations Policy at https://vatsim.net/docs/policy/vsoa-ppm.
-.rwy You have connected on an active runway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
-.twy You have connected on an active taxiway. DISCONNECT IMMEDIATELY and only reconnect once you have repositioned yourself to a parking position!
-
---- AUTOTEXT MESSAGES ---
-.autoproceed proceed direct $1
+;--- AUTOTEXT MESSAGES ---
+.autoproceed proceed direct $uc($1)
 .autoclearedils cleared ILS approach runway $1
 .autoclearedvisual cleared visual approach runway $1
 .autoclimblevel climb to flight level $1
-.autoclimbaltitude climb to altitude $1 ft, QNH $altim($dep)
+.autoclimbaltitude climb to altitude $1, QNH $altim($dep) 
 .autodescendlevel descend to flight level $1
-.autodescendaltitude descend to altitude $1 ft, QNH $altim($arr)
+.autodescendaltitude descend to altitude $1, QNH $altim($arr) 
 .autospeed fly speed $1 knots
 .automach fly speed Mach $1
 .autonospeed resume normal speed
 .autoturnleft turn left heading $1
 .autoturnright turn right heading $1
-.autocontact contact $1 $2
+.autocontact contact $1, $2
 .autosquawk squawk $1
