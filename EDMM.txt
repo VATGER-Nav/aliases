@@ -17,10 +17,30 @@
 .10 expect ILS approach runway 10
 .28 expect ILS approach runway 28
 
+.421 proceed direct DM421 thereafter DM429
+.422 proceed direct DM422 thereafter DM429
+.451 proceed direct DM451 thereafter DM459
+.452 proceed direct DM452 thereafter DM459
+.453 proceed direct DM453 thereafter DM459
+.458 proceed direct DM458 thereafter DM450
+.457 proceed direct DM457 thereafter DM450
+.428 proceed direct DM428 thereafter DM420
+.427 proceed direct DM427 thereafter DM420
+
+.L26 cleared LANDU26 (LAN26) transition
+.L08 cleared LANDU08 (LAN08) transition
+.R26 cleared ROKIL26 (ROK26) transition
+.R08 cleared ROKIL08 (ROK08) transition
+.B26 cleared BETOS26 (BET26) transition
+.B08 cleared BETOS08 (BET08) transition
+.N26 cleared NAPSA26 (NAP26) transition
+.N08 cleared NAPSA08 (NAP08) transition
+
 .WXEDMM .QD EDDM EDDN EDDP EDJA EDMA EMDO ETSI ETSL ETHL EDNY EDQM EDDC EDDE LOWS LOWI
 .WXRDG .QD EDDM EDDN EDJA EDMA EDMO ETSI ETSL ETSN ETHL EDNY EDQM LOWS LOWI
 .WXZUG .QD EDDM EDJA EDMA EDMO EDNY ETSI ETSL ETSN ETHL LOWI LOWS
 .WXALB .QD EDDM EDMA EDMO ETSI ETSN LOWS
+.WXMUC .QD EDDM EDMA EDMO
 .WXDMNL .QD EDDM EDMA EDMO
 .WXSWA .QD EDJA EDMA ETSL ETHL ETSI
 .WXILR .QD EDJA ETSL ETHL
