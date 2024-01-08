@@ -33,7 +33,7 @@
 .atis check information $uc($1)
 .rbr readback correct, report ready
 .su start-up approved
-.suco start-up approved. Hold position. Contact $radioname($1) on $freq($1)
+.suco start-up approved, hold position, contact $radioname($1) on $freq($1)
 
 ;--- GROUND ---
 .p pushback approved
@@ -60,9 +60,9 @@
 .ctlr wind $wind, runway $arrrwy, cleared to land, vacate right
 .ctg wind $wind, runway $arrrwy, cleared touch and go
 .cla wind $wind, runway $arrrwy, cleared low approach
-.rdy report ready for departure
+.rdy report when ready for departure
 .rdyimm are you ready for immediate departure?
-.stop stop immediately. Hold position, cancel take-off
+.stop hold position, cancel take-off
 .ga go around
 .map follow the published missed approach procedure
 .lu line up runway $deprwy
