@@ -11,6 +11,7 @@
 .close all stations, I'm closing, monitor Unicom, 122.800
 .dis disregard
 .una unable
+.na not available
 .rbc readback correct
 .q QNH $altim($1)
 .wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8)
@@ -32,7 +33,7 @@
 .atis check information $uc($1)
 .rbr readback correct, report ready
 .su start-up approved
-.suco start-up approved. Hold position. Contact $radioname($1) on $freq($1)
+.suco start-up approved, hold position, contact $radioname($1) on $freq($1)
 
 ;--- GROUND ---
 .p pushback approved
@@ -59,9 +60,9 @@
 .ctlr wind $wind, runway $arrrwy, cleared to land, vacate right
 .ctg wind $wind, runway $arrrwy, cleared touch and go
 .cla wind $wind, runway $arrrwy, cleared low approach
-.rdy report ready for departure
+.rdy report when ready for departure
 .rdyimm are you ready for immediate departure?
-.stop stop immediately. Hold position, cancel take-off
+.stop hold position, cancel take-off
 .ga go around
 .map follow the published missed approach procedure
 .lu line up runway $deprwy
@@ -107,6 +108,12 @@
 .ra report altitude
 .rf report flight level
 .rh report heading
+.re report established
+.rl report established on localiser
+.rc report established on final approach course
+.rg report established on glide path
+.il intercept localiser runway $arrrwy
+.ic intercept final approach course runway $arrrwy
 .ei expect ILS approach runway $arrrwy
 .eix expect ILS X approach runway $arrrwy
 .eiy expect ILS Y approach runway $arrrwy
@@ -128,6 +135,7 @@
 .cix cleared ILS X approach runway $arrrwy
 .ciy cleared ILS Y approach runway $arrrwy
 .ciz cleared ILS Z approach runway $arrrwy
+.altmg maintain $temp until glide path interception
 .cr cleared RNP approach runway $arrrwy
 .crx cleared RNP X approach runway $arrrwy
 .cry cleared RNP Y approach runway $arrrwy
@@ -137,10 +145,17 @@
 .cg cleared GLS approach runway $arrrwy
 .cgy cleared GLS Y approach runway $arrrwy
 .cgz cleared GLS Z approach runway $arrrwy
-.cl cleared localizer approach runway $arrrwy
-.cly cleared localizer Y approach runway $arrrwy
-.clz cleared localizer Z approach runway $arrrwy
+.cl cleared localiser approach runway $arrrwy
+.cly cleared localiser Y approach runway $arrrwy
+.clz cleared localiser Z approach runway $arrrwy
 .cvis cleared visual approach runway $arrrwy
+.xl you have crossed the localiser, turn $1 immediately and return to the localiser runway $arrrwy
+.xll you have crossed the localiser, turn left immediately and return to the localiser runway $arrrwy
+.xlr you have crossed the localiser, turn right immediately and return to the localiser runway $arrrwy
+.xc you have crossed the final approach course, turn $1 immediately and return to the final approach course runway $arrrwy
+.xcl you have crossed the final approach course, turn left immediately and return to the final approach course runway $arrrwy
+.xcr you have crossed the final approach course, turn right immediately and return to the final approach course runway $arrrwy
+.det to avoid traffic deviating from adjacent approach
 .spd fly speed $1 knots
 .spdg fly speed $1 knots or greater
 .spdl fly speed $1 knots or less
