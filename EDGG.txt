@@ -27,6 +27,11 @@
 .cmnor .msg $aircraft Please contact me on 127.365.
 .cmreu .msg $aircraft Please contact me on 119.200.
 .cmstg .msg $aircraft Please contact me on 125.050.
+.cmdfan .msg $aircraft Please contact me on 120.805.
+.cmdfas .msg $aircraft Please contact me on 125.355.
+
+;*** --- monitor me --- ***
+.mm .msg $aircraft Please monitor my frequency $com.
 
 ;*** --- conditional contact me --- ***
 .cmdebhia .msg $aircraft Please contact me on 120.805 when passing MAMBU at FL130. After DEBHI follow DEBHI1A arrival. (Please do not reply to this message)
