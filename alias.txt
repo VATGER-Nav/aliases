@@ -31,8 +31,8 @@
 .clrs startup approved. Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
 .clrv cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk
 .clrvs startup approved. Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk
-.clrvec cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk
-.clrvis cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $uc($3) ft, climb to altitude $temp, squawk $squawk
+.clrvec cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to $temp, squawk $squawk
+.clrvis cleared to $arr, visual departure, after departure fly heading &1, vectors to $uc($2), flight planned route maintain visual reference to the terrain until passing $3 ft, climb to $temp, squawk $squawk
 .atis check information $uc($1)
 .rbr readback correct, report ready
 .su start-up approved
