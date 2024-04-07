@@ -3,7 +3,7 @@
 .rpos report your position
 .co contact $radioname($1), $freq($1)
 .costby standby for $radioname($1), $freq($1)
-.coa revised airborne frequency is contact $radioname($1) on $freq($1)
+.coa revised airborne frequency is $radioname($1) on $freq($1)
 .uni monitor Unicom, 122.800
 .nma you are not in my airspace, switch back to Unicom, 122.800
 .wf wrong frequency, check again with the previous controller
