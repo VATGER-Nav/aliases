@@ -1,6 +1,6 @@
 ;*** --- sector-specific contact me --- ***
 .cmbot .msg $aircraft Please contact me on 119.110.
-.cmdus .msg $aircraft Please contact me on 128.555.
+.cmdla .msg $aircraft Please contact me on 128.555.
 .cmbad .msg $aircraft Please contact me on 131.300.
 .cmlbu .msg $aircraft Please contact me on 127.050.
 .cmman .msg $aircraft Please contact me on 132.155.
