@@ -29,6 +29,13 @@
 .cmstg .msg $aircraft Please contact me on 125.050.
 .cmdfan .msg $aircraft Please contact me on 120.805.
 .cmdfas .msg $aircraft Please contact me on 125.355.
+.cmtada .msg $aircraft Please contact me on 129.475.
+.cmtara .msg $aircraft Please contact me on 124.280.
+.cmthfa .msg $aircraft Please contact me on 120.865.
+.cmthna .msg $aircraft Please contact me on 127.190.
+.cmtnga .msg $aircraft Please contact me on 123.730.
+.cmtnna .msg $aircraft Please contact me on 129.055.
+.cmtsba .msg $aircraft Please contact me on 130.155.
 
 ;*** --- monitor me --- ***
 .mm .msg $aircraft Please monitor my frequency $com.
