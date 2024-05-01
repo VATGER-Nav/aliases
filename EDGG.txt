@@ -34,6 +34,7 @@
 .mm .msg $aircraft Please monitor my frequency $com.
 
 ;*** --- conditional contact me --- ***
+;DFA
 .cmdebhia .msg $aircraft Please contact me on 120.805 when passing MAMBU at FL130. After DEBHI follow DEBHI1A arrival. (Please do not reply to this message)
 .cmdebhib .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL160 descending to reach FL110 at SPESA. After DEBHI follow DEBHI1B arrival. (Please do not reply to this message)
 .cmdebhic .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL180 descending to reach FL110 at CHA. After DEBHI follow DEBHI1C arrival. (Please do not reply to this message)
@@ -82,3 +83,18 @@
 .cmpitesb .msg $aircraft Please contact me on 125.355 when passing RAMOB descending to reach FL110 at DF401. At RAMOB join RASVO1B arrival. (Please do not reply to this message)
 .cmpitesc .msg $aircraft Please contact me on 125.355 when passing RAMOB at FL130. At RAMOB join RASVO1C arrival. (Please do not reply to this message)
 .cmpitesd .msg $aircraft Please contact me on 120.805 when passing RAMOB at FL110. At RAMOB join RASVO1D arrival. (Please do not reply to this message)
+;STG/REU
+.cminkam .msg $aircraft Please contact me on $com when passing INKAM at FL130. (Please do not reply to this message)
+.cmgebno .msg $aircraft Please contact me on $com 10 NM prior GEBNO descending to reach FL120 at GEBNO. (Please do not reply to this message)
+.cmbadli .msg $aircraft Please contact me on $com when passing BADLI at FL110. (Please do not reply to this message)
+.cmgebda .msg $aircraft Please contact me on $com when passing GEBDA at FL110. (Please do not reply to this message)
+.cmarsut .msg $aircraft Please contact me on $com when passing ARSUT at FL130. (Please do not reply to this message)
+.cmlupen .msg $aircraft Please contact me on $com 10 NM prior LUPEN descending to reach FL130 at LUPEN. (Please do not reply to this message)
+.cmteksi .msg $aircraft Please contact me on $com 10 NM prior TEKSI descending to reach FL110 at TEKSI. (Please do not reply to this message)
+.cmditba .msg $aircraft Please contact me on $com 10 NM prior DITBA descending to reach FL130 at DITBA. (Please do not reply to this message)
+.cmlupol .msg $aircraft Please contact me on $com 10 NM prior LUPOL descending to reach FL130 at LUPOL. (Please do not reply to this message)
+.cmkrh .msg $aircraft Please contact me on $com 10 NM prior KRH descending to reach FL80 at KRH. (Please do not reply to this message)
+.cmamosa .msg $aircraft Please contact me on $com when passing AMOSA at FL100. (Please do not reply to this message)
+.cmelvag .msg $aircraft Please contact me on $com when passing ELVAG at FL100. (Please do not reply to this message)
+.cmakanu .msg $aircraft Please contact me on $com when passing AKANU at FL100. (Please do not reply to this message)
+.cmpelog .msg $aircraft Please contact me on $com when passing PELOG at FL80. (Please do not reply to this message)
