@@ -28,7 +28,17 @@
 .cmreu .msg $aircraft Please contact me on 119.200.
 .cmstg .msg $aircraft Please contact me on 125.050.
 .cmdfan .msg $aircraft Please contact me on 120.805.
+.cmdfant .msg $aircraft Please contact me on 127.280.
 .cmdfas .msg $aircraft Please contact me on 125.355.
+.cmdfast .msg $aircraft Please contact me on 118.505.
+.cmdfdn .msg $aircraft Please contact me on 120.155.
+.cmdfds .msg $aircraft Please contact me on 136.130.
+.cmffm .msg $aircraft Please contact me on 132.330.
+.cmful .msg $aircraft Please contact me on 133.655.
+.cmntm .msg $aircraft Please contact me on 132.080.
+.cmsln .msg $aircraft Please contact me on 120.930.
+.cmtgo .msg $aircraft Please contact me on 132.405.
+.cmwur .msg $aircraft Please contact me on 134.085.
 .cmtada .msg $aircraft Please contact me on 129.475.
 .cmtara .msg $aircraft Please contact me on 124.280.
 .cmthfa .msg $aircraft Please contact me on 120.865.
