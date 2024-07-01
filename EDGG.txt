@@ -52,7 +52,7 @@
 
 ;*** --- conditional contact me --- ***
 ;DFA
-.cmdebhia .msg $aircraft Please contact me on 120.805 when passing MAMBU at FL130. After DEBHI follow DEBHI1A arrival. (Please do not reply to this message)
+.cmdebhia .msg $aircraft Please contact me on 120.805 when passing PIWAW between FL140 and FL150 descending to reach FL130 at MAMBU. After DEBHI follow DEBHI1A arrival. (Please do not reply to this message)
 .cmdebhib .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL160 descending to reach FL110 at SPESA. After DEBHI follow DEBHI1B arrival. (Please do not reply to this message)
 .cmdebhic .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL180 descending to reach FL110 at CHA. After DEBHI follow DEBHI1C arrival. (Please do not reply to this message)
 .cmdebhid .msg $aircraft Please contact me on 120.805 when passing SEVVE between FL160 and FL200 descending to reach FL130 at CHA. After DEBHI follow DEBHI1D arrival. (Please do not reply to this message)
@@ -74,12 +74,12 @@
 .cmpetixb .msg $aircraft Please contact me on 125.355 10 NM prior INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4B arrival. (Please do not reply to this message)
 .cmpetixc .msg $aircraft Please contact me on 125.355 10 NM prior INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4C arrival. (Please do not reply to this message)
 .cmpetixd .msg $aircraft Please contact me on 120.805 10 NM prior INBOS descending to reach FL110 at SPESA. After PETIX follow PETIX4D arrival. (Please do not reply to this message)
-.cmpiwawa .msg $aircraft Please contact me on 120.805 when passing PIWAW descending to reach FL110 at SPESA. After SPESA follow SPESA4A arrival. (Please do not reply to this message)
-.cmpiwawb .msg $aircraft Please contact me on 125.355 when passing PIWAW descending to reach FL110 at SPESA. After SPESA follow SPESA4B arrival. (Please do not reply to this message)
-.cmpiwawc .msg $aircraft Please contact me on 125.355 when passing PIWAW descending to reach FL110 at SPESA. After SPESA follow SPESA4C arrival. (Please do not reply to this message)
-.cmpiwawd .msg $aircraft Please contact me on 120.805 when passing PIWAW descending to reach FL110 at SPESA. After SPESA follow SPESA4D arrival. (Please do not reply to this message)
-.cmpiwawg .msg $aircraft Please contact me on 125.355 when passing PIWAW descending to reach FL110 at SPESA. After SPESA follow SPESA2G arrival. (Please do not reply to this message)
-.cmpiwawr .msg $aircraft Please contact me on 125.355 when passing PIWAW descending to reach FL110 at SPESA. After SPESA follow SPESA4R arrival. (Please do not reply to this message)
+.cmpiwawa .msg $aircraft Please contact me on 120.805 when passing PIWAW at or below FL130 descending to reach FL110 at SPESA. After SPESA follow SPESA4A arrival. (Please do not reply to this message)
+.cmpiwawb .msg $aircraft Please contact me on 125.355 when passing PIWAW at or below FL130 descending to reach FL110 at SPESA. After SPESA follow SPESA4B arrival. (Please do not reply to this message)
+.cmpiwawc .msg $aircraft Please contact me on 125.355 when passing PIWAW at or below FL130 descending to reach FL110 at SPESA. After SPESA follow SPESA4C arrival. (Please do not reply to this message)
+.cmpiwawd .msg $aircraft Please contact me on 120.805 when passing PIWAW at or below FL130 descending to reach FL110 at SPESA. After SPESA follow SPESA4D arrival. (Please do not reply to this message)
+.cmpiwawg .msg $aircraft Please contact me on 125.355 when passing PIWAW at or below FL130 descending to reach FL110 at SPESA. After SPESA follow SPESA2G arrival. (Please do not reply to this message)
+.cmpiwawr .msg $aircraft Please contact me on 125.355 when passing PIWAW at or below FL130 descending to reach FL110 at SPESA. After SPESA follow SPESA4R arrival. (Please do not reply to this message)
 .cmrasvoa .msg $aircraft Please contact me on 120.805 10 NM prior RAMOB descending to reach FL110 at DF401. After RASVO follow RASVO1A arrival. (Please do not reply to this message)
 .cmrasvob .msg $aircraft Please contact me on 125.355 10 NM prior RAMOB descending to reach FL110 at DF401. After RASVO follow RASVO1B arrival. (Please do not reply to this message)
 .cmrasvoc .msg $aircraft Please contact me on 125.355 10 NM prior RAMOB descending to reach FL130 at RAMOB. After RASVO follow RASVO1C arrival. (Please do not reply to this message)
