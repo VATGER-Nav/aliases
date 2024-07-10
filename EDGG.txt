@@ -135,7 +135,7 @@
 .cmdomegdg .msg $aircraft Please contact me on 129.300 20 NM prior DOMEG descending to reach FL90 at HMM. (Please do not reply to this message)
 .cmdomeglw .msg $aircraft Please contact me on 125.225 10 NM prior DOMEG descending to reach FL80 at DOMEG. After DOMEG follow DOMEG2A arrival. (Please do not reply to this message)
 .cmexoba .msg $aircraft Please contact me on 125.225 20 NM prior EXOBA descending to reach FL70 at EXOBA. (Please do not reply to this message)
-.cmhmm .msg $aircraft Please contact me on 129.300 30 NM prior HMM descending to reach FL250 20 NM prior HMM. (Please do not reply to this message)
+.cmhmmdl .msg $aircraft Please contact me on 129.300 30 NM prior HMM descending to reach FL250 20 NM prior HMM. (Please do not reply to this message)
 .cmhmmdg .msg $aircraft Please contact me on 129.300 40 NM prior HMM descending to reach FL90 at HMM. (Please do not reply to this message)
 .cmpadbalp .msg $aircraft Please contact me on 125.225 when passing PADBA at FL130. After PADBA follow PADBA4H arrival. (Please do not reply to this message)
 .cmpadbalw .msg $aircraft Please contact me on 125.225 20 NM prior PADBA descending to reach FL70 at PADBA. (Please do not reply to this message)
