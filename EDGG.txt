@@ -1,3 +1,6 @@
+;*** --- (TEMP) EDDK RWY fix --- ***
+.eddkfix With AIRAC 2404, Köln/Bonn's runways were renamed. For pilots using MSFS, this can cause issues loading some procedures if their scenery still uses the old runway numbers. VATSIM Germany provides an addon to fix this issue - for more information and to download the addon, please go to https://vats.im/eddkfix
+
 ;*** --- sector-specific contact me --- ***
 .cmbot .msg $aircraft Please contact me on 119.110.
 .cmdla .msg $aircraft Please contact me on 128.555.
