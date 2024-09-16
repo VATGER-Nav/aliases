@@ -42,6 +42,8 @@
 .cmsln .msg $aircraft Please contact me on 120.930.
 .cmtgo .msg $aircraft Please contact me on 132.405.
 .cmwur .msg $aircraft Please contact me on 134.085.
+.cmmns .msg $aircraft Please contact me on 122.185.
+.cmrhr .msg $aircraft Please contact me on 128.790.
 .cmtada .msg $aircraft Please contact me on 129.475.
 .cmtara .msg $aircraft Please contact me on 124.280.
 .cmthfa .msg $aircraft Please contact me on 120.865.
@@ -59,6 +61,10 @@
 .cmdebhib .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL160 descending to reach FL110 at SPESA. After DEBHI follow DEBHI1B arrival. (Please do not reply to this message)
 .cmdebhic .msg $aircraft Please contact me on 125.355 when passing SEVVE between FL140 and FL180 descending to reach FL110 at CHA. After DEBHI follow DEBHI1C arrival. (Please do not reply to this message)
 .cmdebhid .msg $aircraft Please contact me on 120.805 when passing SEVVE between FL160 and FL200 descending to reach FL130 at CHA. After DEBHI follow DEBHI1D arrival. (Please do not reply to this message)
+.cmdixata .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at OSPUL. After TANJO follow DIXAT1A arrival. (Please do not reply to this message)
+.cmdixatb .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After TANJO follow DIXAT1B arrival. (Please do not reply to this message)
+.cmdixatc .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After TANJO follow DIXAT1C arrival. (Please do not reply to this message)
+.cmdixatd .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at OSPUL. After TANJO follow DIXAT1D arrival. (Please do not reply to this message)
 .cmempaxa .msg $aircraft Please contact me on 120.805 when passing ADNIS at FL100. After EMPAX follow EMPAX5A arrival. (Please do not reply to this message)
 .cmempaxb .msg $aircraft Please contact me on 125.355 when passing ADNIS at FL100. After EMPAX follow EMPAX5B arrival. (Please do not reply to this message)
 .cmempaxc .msg $aircraft Please contact me on 125.355 when passing ADNIS at FL100. After EMPAX follow EMPAX5C arrival. (Please do not reply to this message)
@@ -87,10 +93,10 @@
 .cmrasvob .msg $aircraft Please contact me on 125.355 10 NM prior RAMOB descending to reach FL110 at DF401. After RASVO follow RASVO1B arrival. (Please do not reply to this message)
 .cmrasvoc .msg $aircraft Please contact me on 125.355 10 NM prior RAMOB descending to reach FL130 at RAMOB. After RASVO follow RASVO1C arrival. (Please do not reply to this message)
 .cmrasvod .msg $aircraft Please contact me on 120.805 10 NM prior RAMOB descending to reach FL110 at RAMOB. After RASVO follow RASVO1D arrival. (Please do not reply to this message)
-.cmrolisa .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at ETARU. After ROLIS follow ROLIS4A arrival. (Please do not reply to this message)
-.cmrolisb .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After ROLIS follow ROLIS4B arrival. (Please do not reply to this message)
-.cmrolisc .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After ROLIS follow ROLIS4C arrival. (Please do not reply to this message)
-.cmrolisd .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at ETARU. After ROLIS follow ROLIS4D arrival. (Please do not reply to this message)
+.cmrolisa .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at OSPUL. After ROLIS follow ROLIS5A arrival. (Please do not reply to this message)
+.cmrolisb .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After ROLIS follow ROLIS5B arrival. (Please do not reply to this message)
+.cmrolisc .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After ROLIS follow ROLIS5C arrival. (Please do not reply to this message)
+.cmrolisd .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at OSPUL. After ROLIS follow ROLIS5D arrival. (Please do not reply to this message)
 .cmrolisg .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at ETARU. After ROLIS follow ROLIS5G arrival. (Please do not reply to this message)
 .cmrolisr .msg $aircraft Please contact me on 120.805 10 NM prior ROLIS descending to reach FL100 at ROLIS. After ROLIS follow ROLIS4R arrival. (Please do not reply to this message)
 .cmspesaa .msg $aircraft Please contact me on 120.805 10 NM prior SPESA descending to reach FL110 at SPESA. After SPESA follow SPESA4A arrival. (Please do not reply to this message)
@@ -105,10 +111,6 @@
 .cmsupixd .msg $aircraft Please contact me on 120.805 when passing SUKON at FL100. After SPESA follow SPESA4D arrival. (Please do not reply to this message)
 .cmsupixg .msg $aircraft Please contact me on 125.355 when passing SUKON at FL100. After SPESA follow SPESA3G arrival. (Please do not reply to this message)
 .cmsupixr .msg $aircraft Please contact me on 125.355 when passing SUKON at FL100. After SPESA follow SPESA5R arrival. (Please do not reply to this message)
-.cmtanjoa .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at ETARU. After TANJO follow TANJO1A arrival. (Please do not reply to this message)
-.cmtanjob .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After TANJO follow TANJO1B arrival. (Please do not reply to this message)
-.cmtanjoc .msg $aircraft Please contact me on 125.355 when passing ROLIS at FL120. After TANJO follow TANJO1C arrival. (Please do not reply to this message)
-.cmtanjod .msg $aircraft Please contact me on 120.805 when passing ROLIS descending to reach FL100 at ETARU. After TANJO follow TANJO1D arrival. (Please do not reply to this message)
 .cmunokog .msg $aircraft Please contact me on 120.805 10 NM prior RAMOB descending to reach FL110 at RAMOB. After UNOKO follow UNOKO5G arrival. (Please do not reply to this message)
 .cmunokor .msg $aircraft Please contact me on 120.805 10 NM prior RAMOB descending to reach FL110 at RAMOB. After UNOKO follow UNOKO5R arrival. (Please do not reply to this message)
 .cmpitesa .msg $aircraft Please contact me on 120.805 10 NM prior RAMOB descending to reach FL110 at DF401. At RAMOB join RASVO1A arrival. (Please do not reply to this message)
