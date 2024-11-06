@@ -4,12 +4,12 @@
 .co contact $radioname($1), $freq($1)
 .costby standby for $radioname($1), $freq($1)
 .coa revised airborne frequency is $radioname($1) on $freq($1)
-.uni monitor Unicom, 122.800
-.nma you are not in my airspace, switch back to Unicom, 122.800
+.adv monitor Advisory, 122.800
+.nma you are not in my airspace, switch back to Advisory, 122.800
 .wf wrong frequency, check again with the previous controller
 .stby standby
 .rgr roger
-.close all stations, I'm closing, monitor Unicom, 122.800
+.close all stations, I'm closing, monitor Advisory, 122.800
 .dis disregard
 .una unable
 .na not available
