@@ -1,6 +1,35 @@
 ;*** --- (TEMP) EDDK RWY fix --- ***
 .eddkfix With AIRAC 2404, Köln/Bonn's runways were renamed. For pilots using MSFS, this can cause issues loading some procedures if their scenery still uses the old runway numbers. VATSIM Germany provides an addon to fix this issue - for more information and to download the addon, please go to https://vats.im/eddkfix
 
+;*** --- additional information aliases --- ***
+.helphs .msg $aircraft You have not correctly followed a hold short instruction. When instructed to hold short of a taxiway, parking position, or named stopbar, you are required to stop moving before that taxiway, parking position, or stopbar such that there is sufficient space for other aircraft to pass in front of you. Taxiing beyond this clearance limit (e.g. turning into a taxiway you were instructed to hold short of) will likely result in significant problems for ATC and other pilots as well as delays for yourself.
+.helpvac .msg $aircraft You have not correctly vacated the runway. After landing, you have to continue taxiing off the runway until the entirety of your aircraft has passed the applicable runway hold short line; if you stop before this point, you will still be considered on the runway and ATC won't be able to clear following traffic for takeoff or landing. Additionally, some airports have mandatory exits and/or exit directions that can be found in the AIP text pages and which ATC expects you to comply with; not doing so is likely to result in significant problems for ATC and other pilots as well as delays for yourself.
+.helptd .msg $aircraft To find out which controller, if any, is responsible for your airport or airspace, please use https://vatglasses.uk/
+.helpcoc .msg $aircraft Please ensure that you are able to read back and follow any instructions given by ATC promptly and accurately. Germany's airspace and airports are some of the busiest on VATSIM which means that there often is little room for mistakes on both the ATC and pilot side; we understand that this can be quite stressful at times and that not all pilots are able or willing to deal with this stress, but would highly recommend you pick calmer areas to fly in this case as controllers here usually won't be able to provide much assistance or accommodate special requests.
+.helprdy .msg $aircraft It appears you have reported ready for a clearance without actually being ready. When reporting ready, ATC expects you to be able to comply with the respective instruction within the next minute. Please only report ready when you are able to actually do so. If an unexpected problem appears after you have already received a clearance, please inform ATC as soon as possible.
+.helpdct .msg $aircraft Please avoid giving yourself directs while not under ATC coverage as this may result in sector clipping, a change in sector sequence, or conflicts in online downstream sectors. The airspace and route structure in Europe in general and Germany in particular is very complex meaning pilots normally won't be able to judge whether a shortcut is acceptable or not and you can expect controllers to issue instructions to return you to your filed or an entirely new route if they can't accommodate this direct. Please also note that the time gained from shortcuts on most routes throughout Europe only leads to negligible time gains in the order of 1-2 minutes; if you want to get your flights done more quickly, we recommend picking airport pairs that are closer to one another.
+.helpcon .msg $aircraft When connecting to the network, please only connect at a parking position at your departure airport. If you need to reconnect while airborne, please initially connect in observer mode and call the controller responsible for the airspace you are in (accurate coverage data can be found at https://vatglasses.uk/). After establishing contact, inform them that you would like to reconnect within their airspace and give them an accurate position report (preferably in reference to a VOR or larger airport) as well as your level - ATC will then tell you if it's fine for you to reconnect there or not.
+.helpcpdlc .msg $aircraft CPDLC is a very helpful tool that allows controllers and pilots to communicate non-time-critical items through text, thus significantly alleviating frequency load. A similar system called DCL is available for enroute clearances at a number of airports. VATSIM Germany simulates this system through use of the Hoppie network and we highly recommend that all pilots able to do so use it. Please note, however, that CPDLC is only available in upper airspace (EDUU and EDYY airspace, beginning between FL245 and FL315 depending on sector group) and does not replace voice communications - even when connected to CPDLC, you are required to pay attention to the frequency and be ready to receive time-critical instructions through voice communications.
+.helpeddf .msg $aircraft You can find briefing material for EDDF at https://vats.im/eddf
+.helpeddg .msg $aircraft You can find briefing material for EDDG at https://vats.im/eddg
+.helpeddk .msg $aircraft You can find briefing material for EDDK at https://vats.im/eddk
+.helpeddl .msg $aircraft You can find briefing material for EDDL at https://vats.im/eddl
+.helpeddr .msg $aircraft You can find briefing material for EDDR at https://vats.im/eddr
+.helpedds .msg $aircraft You can find briefing material for EDDS at https://vats.im/edds
+.helpedfh .msg $aircraft You can find briefing material for EDFH at https://vats.im/edfh
+.helpedfm .msg $aircraft You can find briefing material for EDFM at https://vats.im/edfm
+.helpedln .msg $aircraft You can find briefing material for EDLN at https://vats.im/edln
+.helpedlp .msg $aircraft You can find briefing material for EDLP at https://vats.im/edlp
+.helpedlv .msg $aircraft You can find briefing material for EDLV at https://vats.im/edlv
+.helpedlw .msg $aircraft You can find briefing material for EDLW at https://vats.im/edlw
+.helpedsb .msg $aircraft You can find briefing material for EDSB at https://vats.im/edsb
+.helpedtl .msg $aircraft You can find briefing material for EDTL at https://vats.im/edtl
+.helpetnn .msg $aircraft You can find briefing material for ETNN at https://vats.im/etnn
+.helpedqg .msg $aircraft You can find briefing material for EDQG at https://vats.im/edqg
+.helpedry .msg $aircraft You can find briefing material for EDRY at https://vats.im/edry
+.helpedrz .msg $aircraft You can find briefing material for EDRZ at https://vats.im/edrz
+.helpedty .msg $aircraft You can find briefing material for EDTY at https://vats.im/edty
+
 ;*** --- sector-specific contact me --- ***
 .cmbot .msg $aircraft Please contact me on 119.110.
 .cmdla .msg $aircraft Please contact me on 128.555.
