@@ -23,7 +23,7 @@
 
 ;--- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens
-.rte .msg $aircraft The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com
+.rte .msg $aircraft The route you have filed is invalid. To learn how to find valid routes, go to https://vats.im/flight-planning
 .newrte .msg $aircraft The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
 .tobt please set your TOBT at https://app.vacdm.net
 .tsat You can find your current TSAT at https://app.vacdm.net
@@ -259,6 +259,7 @@
 .helptext .msg $aircraft You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback
 .helppm .msg $aircraft Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers
 .helpcharts .msg $aircraft You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/
+.helprte Due to the complex airspace structure in Europe, it is very important that pilots file valid routes. To learn how to find valid routes, go to https://vats.im/flight-planning
 .helpsector .msg $aircraft You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/
 .helpgg .msg $aircraft You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg
 .helpmm .msg $aircraft You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm
