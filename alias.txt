@@ -5,6 +5,7 @@
 .costby standby for $radioname($1), $freq($1)
 .coa revised airborne frequency is $radioname($1) on $freq($1)
 .adv monitor Advisory, 122.800
+.uni monitor Advisory, 122.800
 .nma I'm not expecting you, switch back to previous frequency
 .wf wrong frequency, check again with the previous controller
 .stby standby
