@@ -261,7 +261,7 @@
 .helppm .msg $aircraft Unfortunately my workload doesn't allow me to help you through private messages at the moment. Please use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers
 .helpcharts .msg $aircraft You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/
 .helprte Due to the complex airspace structure in Europe, it is very important that pilots file valid routes. To learn how to find valid routes, go to https://vats.im/flight-planning
-.helpsector .msg $aircraft You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/ or https://vatsim-radar.com/vg (use VATGlasses-data!)
+.helpsector .msg $aircraft You can find an accurate map of the current ATC coverage and sector splits at https://knowledgebase.vatsim-germany.org/books/fis-langen-information/page/fluginformationsdienst-fis
 .helprc .msg $aircraft You just requested a "radio check" on frequency. Please bear in mind that you should only do this when you actually experienced issues before and/or fixed a problem with your speaker/microphone. The more pilots do radio-checks, the more we run into issues with congestion on already busy frequencies. In principle, your first call on a frequency does already count as a "radio check" and if ATC can not understand you, they are going to tell you. So, please try to remove "radio checks" from your habits to help us all. Thank you!
 .helpgg .msg $aircraft You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg
 .helpmm .msg $aircraft You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm
@@ -290,7 +290,3 @@
 .autoturnright Turn right heading $uc($1)
 .autocontact Contact $radioname($1), $freq($1)
 .autosquawk Squawk $squawk
-
-
-
-
