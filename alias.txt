@@ -4,12 +4,13 @@
 .co contact $radioname($1), $freq($1)
 .costby standby for $radioname($1), $freq($1)
 .coa revised airborne frequency is $radioname($1) on $freq($1)
-.uni monitor Unicom, 122.800
-.nma you are not in my airspace, switch back to Unicom, 122.800
+.adv monitor Advisory, 122.800
+.uni monitor Advisory, 122.800
+.nma I'm not expecting you, switch back to previous frequency
 .wf wrong frequency, check again with the previous controller
 .stby standby
 .rgr roger
-.close all stations, I'm closing, monitor Unicom, 122.800
+.close All stations, I'm closing, monitor Advisory, 122.800
 .dis disregard
 .una unable
 .na not available
@@ -23,10 +24,10 @@
 
 ;--- DELIVERY ---
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens
-.rte .msg $aircraft The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com
+.rte .msg $aircraft The route you have filed is invalid. To learn how to find valid routes, go to https://vats.im/flight-planning
 .newrte .msg $aircraft The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.tobt please set your TOBT at https://vacdm.vatger.de
-.tsat You can find your current TSAT at https://vacdm.vatger.de
+.tobt please set your TOBT at https://app.vacdm.net
+.tsat You can find your current TSAT at https://app.vacdm.net
 .clr cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
 .clrs startup approved, cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk
 .clrv cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk
@@ -256,10 +257,12 @@
 
 ;--- HELP ---
 .helpnewbie .msg $aircraft You seem to be new to VATSIM. First of all: Welcome! It might be tempting to jump straight in and start flying, but we suggest you read through some documentation first in order to prepare yourself for the situations you will encounter on the network. You can find a lot of helpful information at https://my.vatsim.net/learn. For Germany-specific information, take a look at https://kb.vatger.de. If you have any questions, feel free to ask them at https://forum.vatsim.net or on one of the Discord servers at https://community.vatsim.net/servers
-.helptext .msg $aircraft You are indicating that you are only able to communicate via text. Please keep in mind that text communications add significantly to ATC's workload, so they might not immediately be able to answer you. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback
-.helppm .msg $aircraft Please don't send private messages to controllers as they add significantly to ATC's workload; use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers
+.helptext .msg $aircraft You are indicating that you are only able to communicate via text. Please ignore this message, if you are not capable to use speaker or microphone (e.g. due to hearing impairment). Though if you are able to use either "Voice" or "Receive only", we want to inform you that text communications add to ATC's workload, as we are used to voice communications. If you have access to headphones or speakers, please select at least "Receive only" when filing your flight plan; if you also have access to a microphone, please select "Voice". While flying with "Text only" or "Receive only", please also start following all instructions prior to writing your readback. Thank you!
+.helppm .msg $aircraft Unfortunately my workload doesn't allow me to help you through private messages at the moment. Please use the frequency instead. If you have a question that doesn't belong on frequency, please ask it at https://forum.vatsim.net/ or one of the Discord servers at https://community.vatsim.net/servers
 .helpcharts .msg $aircraft You can find free and current IFR charts for German airports at https://chartfox.org; free and current VFR charts for German airports can be found at https://www.vfraip.de/
-.helpsector .msg $aircraft You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/
+.helprte Due to the complex airspace structure in Europe, it is very important that pilots file valid routes. To learn how to find valid routes, go to https://vats.im/flight-planning
+.helpsector .msg $aircraft You can find an accurate map of the current ATC coverage and sector splits at https://vatglasses.uk/ or https://vatsim-radar.com/vg (use VATGlasses-data!)
+.helprc .msg $aircraft You just requested a "radio check" on frequency. Please bear in mind that you should only do this when you actually experienced issues before and/or fixed a problem with your speaker/microphone. The more pilots do radio-checks, the more we run into issues with congestion on already busy frequencies. In principle, your first call on a frequency does already count as a "radio check" and if ATC can not understand you, they are going to tell you. So, please try to remove "radio checks" from your habits to help us all. Thank you!
 .helpgg .msg $aircraft You can find pilot briefings for airports in FIR Langen at https://knowledgebase.vatsim-germany.org/books/airports-langen-fir-edgg
 .helpmm .msg $aircraft You can find pilot briefings for airports in FIR Munich at https://knowledgebase.vatsim-germany.org/books/airports-munchen-fir-edmm
 .helpww .msg $aircraft You can find pilot briefings for airports in FIR Bremen at https://knowledgebase.vatsim-germany.org/books/airports-bremen-fir-edww
@@ -268,8 +271,8 @@
 .helpiata .msg $aircraft You seem to be logged in with the 2-letter IATA code for your airline. On VATSIM (and in the real world), we use the 3-letter ICAO codes. Please change your callsign accordingly and don't forget that you will have to refile your flight plan with the correct callsign as well. Otherwise, ATC might not recognize your callsign
 .helpequip .msg $aircraft You have not filed an equipment code (or have filed one that is most likely incorrect). Please keep in mind that filing a correct equipment code helps controllers to quickly see what type of procedures you are able to fly etc. You can learn more about equipment codes at https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf
 .help833 .msg $aircraft You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 <frequency>" in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833
-.helpxc .msg $aircraft Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff
-.helpacdm .msg $aircraft If you are unfamiliar with the ACDM process, you can learn about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide
+.helpxc .msg $aircraft Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
+.helpacdm .msg $aircraft $dep currently uses ACDM procedures which requires all departing pilots to report their TOBT through the vACDM pilot interface at https://app.vacdm.net to ensure an efficient traffic flow with as little delay as possible. If you are unfamiliar with the ACDM process, you can learn more about it at https://knowledgebase.vatsim-germany.org/books/vacdm/page/vacdm-pilot-guide
 .helpfl .msg $aircraft Please make sure to correctly differentiate between flight level and altitude to ensure proper separation from terrain and other traffic. A flight level instruction (e.g. "climb to flight level 140") means that you have to use the STD QNH (1013.25hPa) as a barometric reference; an altitude instruction (e.g. "descend to 4000 feet") means that you have to use the local QNH.
 
 ;--- AUTOTEXT MESSAGES ---
@@ -287,3 +290,4 @@
 .autoturnright turn right heading $1
 .autocontact contact $1, $2
 .autosquawk squawk $1
+
