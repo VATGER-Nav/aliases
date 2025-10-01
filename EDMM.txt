@@ -17,6 +17,7 @@
 .10 expect ILS approach runway 10
 .28 expect ILS approach runway 28
 
+.420 proceed direct DM420 thereafter DM429
 .421 proceed direct DM421 thereafter DM429
 .422 proceed direct DM422 thereafter DM429
 .451 proceed direct DM451 thereafter DM459
@@ -24,6 +25,7 @@
 .453 proceed direct DM453 thereafter DM459
 .458 proceed direct DM458 thereafter DM450
 .457 proceed direct DM457 thereafter DM450
+.425 proceed direct DM425 thereafter DM420
 .428 proceed direct DM428 thereafter DM420
 .427 proceed direct DM427 thereafter DM420
 
@@ -49,3 +51,4 @@
 .WXFRK .QD EDDN EDQM ETIC
 
 .helpwy Hey! On your initial contact you said the phrase "with you". There is absolutely no need to say that. When you speak to me on the frequency I certainly know, that you are "with me". An initial call shall include the following items: München Radar, CALLSIGN, Current Altitude or FL, cleared Altitude or FL (when climbing/descending), Assigned Speed (if you have an assigned speed/Mach from the previous controller). No more, no less, and definitely no "with you". For example: "München Radar, DLH414, FL146, climbing FL190, speed 250"
+.helpeddm Please review the Munich pilot briefing at vats.im/eddm before your next visit. It covers, amongst other things, the proper arrival procedures we need every pilot to know to allow efficient operations. Thanks.
