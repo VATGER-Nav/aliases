@@ -1,0 +1,69 @@
+.D1 Taxi left via D1, hold short of runway 33.
+.G Taxi left via D1 and G, hold short of runway 33.
+.A6 Long rollout approved, vacate via A6.
+.C33 Cross runway 33.
+.C23 Cross runway 23.
+.C15 Cross runway 15.
+.C05 Cross runway 05.
+.NOLGO Holding information for NOLGO: Inbound track 005 degrees, left turns.
+.RIBSO Holding information for RIBSO: Inbound track 028 degrees, right turns.
+.BOGMU Holding information for BOGMU: Inbound track 229 degrees, right turns.
+.RARUP Holding information for RARUP: Inbound track 276 degrees, right turns.
+
+.T27R Taxi to holding point runway 27R via $1, M and N, cross runway 27C.
+.T27L taxi to holding point runway 27L via $1.
+.T09L Taxi to holding point runway 09L via $1, G and H, cross runway 09C.
+.T09R Taxi to holding point runway 09R via $1.
+.C27 Cross runway 27C.
+.C09 Cross runway 09C.
+.NIE Holding information for NIE: Inbound track 181 degrees, right turns.
+.CEL Holding information for CEL: Inbound track 257 degrees, right turns.
+.SAS Holding information for SAS: Inbound track 088 degrees, left turns.
+.ROBEG Holding information for ROBEG: Inbound track 007 degrees, right turns.
+
+.T27 Taxi to holding point runway 27 via N, C and F.
+.T09 Taxi to holding point runway 09 via N and A.
+.VERED Holding information for VERED: Inbound track 297 degrees, right turns.
+.PIXUR Holding information for PIXUR: Inbound track 347 degrees, left turns.
+.GIBMA Holding information for GIBMA: Inbound track 181 degrees, right turns.
+.EKROV Holding information for EKROV: Inbound track 254 degrees, right turns.
+.BMN Holding information for BMN: Inbound track 177 degrees, right turns.
+
+.WXWW .QD EDDH EDDV EDDW EDXW EDHK EDDG EDLP EDDP EDHL EDVE EDVK
+.WXALR .QD EDDH EDHL EDHI EDDW EDXW EDHK ETNS ETNT EKBI
+.WXHEI .QD EDDH EDHL EDHI EDDW EDDV
+.WXEID .QD EDDW EDXW EDHK EDDH ETNS ETMN ETNT
+.WXHRZ .QD EDDV EDVE EDVK EDDP EDDG EDLP EDDW EDDH
+.WXEMS .QD EDDV EDVE EDVK EDDP EDDG EDLP EDDW EDDH
+.WXMRZ .QD EDDB EDAH ETNL ETSH
+.WXHAM .QD EDDH EDHL EDHI EDDW EDDV
+.WXDHAT .QD EDDH EDHI
+.WXFRI .QD EDDW EDDH EDDV ETMN ETNT EDWE
+.WXHAN .QD EDDV EDVE ETNW ETHB ETHC ETHS
+.WXDVAT .QD EDDV
+.WXDBAS .QD EDDB ETSH
+.WXDBAN .QD EDDB ETSH
+.WXDBDS .QD EDDB ETSH
+.WXDBDN .QD EDDB ETSH
+
+.CAR Approval request $1, $aircraft DCT $2.
+.CARAC Approval request for airspace crossing $aircraft, $1.
+.CARACC Approval request for airspace crossing $aircraft, $1, climb up to $2.
+.CARACD Approval request for airspace crossing $aircraft, $1, descending down to $2. 
+.CARAT Approval request for additional traffic, $aircraft $1. 
+.CARS Approval request $1, $aircraft and $2, $3 NM spacing, $4. 
+.CEDAH Hello, approval request for airspace crossing, $aircraft, position $1, approaching EDAH RWY28, expected approach time $2. 
+.CRLT Request release for left turns $aircraft.
+.CRRT Request release for right turns $aircraft.
+.CRC Request release for climb $aircraft.
+.CRD Request release for descent $aircraft.
+.CREF Reference $1, request $2. 
+.CDR Request release $aircraft.
+.CAPVD Approved! 
+.CARES Approved, $1. 
+.CRLSD $1 released. 
+.CRS $1 released, subject your discretion $2. 
+.CW Wilco! 
+.CC Consider!
+.CU Unable $1
+.CREQ Request $1, $aircraft $2
