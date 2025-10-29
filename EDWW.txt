@@ -1,6 +1,8 @@
+;--- EDDB ---
 .rcbikpo You are re-cleared via BIKPO DCT GERGA; thereafter, continue the flight-planned route.
 .rcgerga You are re-cleared via GERGA M725 RENKI; thereafter, continue the flight-planned route.
 
+;--- EDDH ---
 .D1 Taxi left via D1, hold short of runway 33.
 .G Taxi left via D1 and G, hold short of runway 33.
 .A6 Long rollout approved, vacate via A6.
@@ -13,6 +15,7 @@
 .BOGMU Holding information for BOGMU: Inbound track 229 degrees, right turns.
 .RARUP Holding information for RARUP: Inbound track 276 degrees, right turns.
 
+;--- EDDV ---
 .T27R Taxi to holding point runway 27R via $1, M and N, cross runway 27C.
 .T27L taxi to holding point runway 27L via $1.
 .T09L Taxi to holding point runway 09L via $1, G and H, cross runway 09C.
@@ -24,6 +27,7 @@
 .SAS Holding information for SAS: Inbound track 088 degrees, left turns.
 .ROBEG Holding information for ROBEG: Inbound track 007 degrees, right turns.
 
+;--- EDDW ---
 .T27 Taxi to holding point runway 27 via N, C and F.
 .T09 Taxi to holding point runway 09 via N and A.
 .VERED Holding information for VERED: Inbound track 297 degrees, right turns.
@@ -32,6 +36,7 @@
 .EKROV Holding information for EKROV: Inbound track 254 degrees, right turns.
 .BMN Holding information for BMN: Inbound track 177 degrees, right turns.
 
+;--- WX EDWW ---
 .WXWW .QD EDDH EDDV EDDW EDXW EDHK EDDG EDLP EDDP EDHL EDVE EDVK
 .WXALR .QD EDDH EDHL EDHI EDDW EDXW EDHK ETNS ETNT EKBI
 .WXHEI .QD EDDH EDHL EDHI EDDW EDDV
@@ -49,6 +54,7 @@
 .WXDBDS .QD EDDB ETSH
 .WXDBDN .QD EDDB ETSH
 
+;--- Coordination (EDWW) ---
 .CAR Approval request $1, $aircraft DCT $2.
 .CARAC Approval request for airspace crossing $aircraft, $1.
 .CARACC Approval request for airspace crossing $aircraft, $1, climb up to $2.
