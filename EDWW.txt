@@ -1,3 +1,6 @@
+.rcbikpo You are re-cleared via BIKPO DCT GERGA; thereafter, continue the flight-planned route.
+.rcgerga You are re-cleared via GERGA M725 RENKI; thereafter, continue the flight-planned route.
+
 .D1 Taxi left via D1, hold short of runway 33.
 .G Taxi left via D1 and G, hold short of runway 33.
 .A6 Long rollout approved, vacate via A6.
